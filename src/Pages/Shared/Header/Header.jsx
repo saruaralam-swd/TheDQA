@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import TopHeader from "./TopHeader";
-import { Link, NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import {
   Bars3Icon,
   ArrowRightOnRectangleIcon,
@@ -10,49 +10,65 @@ import { GrLanguage } from "react-icons/gr";
 
 const Header = () => {
   const [isActive, setActive] = useState("false");
+  const [isDropDownActive, setDropDownActive] = useState("false");
 
   // Sidebar Responsive Handler
   const handleToggle = () => {
     setActive(!isActive);
   };
 
+  const handleDropDown = () => {
+    setDropDownActive(!isDropDownActive);
+  };
+
   return (
     <>
       <TopHeader />
 
+      {/* Desktop Navbar */}
       <section className="hidden md:flex justify-between  px-8 py-5 ">
         <nav className="text-3xl font-bold text-[#32cd32]">
           <Link to="/">Theif</Link>
         </nav>
 
-        <div>
-          <span>
-            <Link>Home</Link>
-          </span>
-          <span>
+        <div className="flex items-center justify-center gap-4">
+          <div>
+            <Link to="/" className="text-orange-500 font-semibold">
+              Home
+            </Link>
+          </div>
+          <div>
             <Link>Services</Link>
-          </span>
-          <span>
+          </div>
+          <div>
             <Link>About</Link>
-          </span>
-          <span>
+          </div>
+
+          <div>
             <Link>Blog</Link>
-          </span>
-          <span>
+          </div>
+          <div>
             <Link>Contact Us</Link>
-          </span>
+          </div>
         </div>
 
-        <div>
-          <span>
-            <Link>Blog</Link>
-          </span>
-          <button>Free Consultation</button>
+        <div className="flex gap-4 items-center justify-center">
+          <div>
+            <Link className="flex items-center justify-center gap-2">
+              <span>
+                <GrLanguage className="w-4 h-4" />
+              </span>
+              <span>Blog</span>
+            </Link>
+          </div>
+          <button className="px-4 py-2 bg-orange-500 text-white rounded-md">
+            Free Consultation
+          </button>
         </div>
       </section>
 
+      {/* Mobile Device Navbar */}
       <section>
-        {/* only small device show */}
         <div className="bg-gray-100 text-gray-800 flex justify-between md:hidden">
           <div>
             <div className="block cursor-pointer p-4 font-bold">
