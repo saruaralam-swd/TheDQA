@@ -5,7 +5,7 @@ import { FaFacebookF, FaInstagram, FaTwitter, FaYoutube } from "react-icons/fa";
 
 const TopHeader = () => {
   return (
-    <div className="bg-[#F0EEEE] md:flex justify-between px-8 py-5">
+    <section className="bg-[#F0EEEE] md:flex justify-between px-8 py-5">
       <div className="flex gap-5 items-center justify-center">
         <p>
           <PhoneIcon className="h-4 w-4 text-orange-500 inline-block" />{" "}
@@ -39,7 +39,7 @@ const TopHeader = () => {
           </Link>
         </span>
       </div>
-    </div>
+    </section>
   );
 };
 
