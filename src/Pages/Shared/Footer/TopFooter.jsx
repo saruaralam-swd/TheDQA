@@ -2,7 +2,7 @@ import React from "react";
 import { EnvelopeIcon, PhoneIcon } from "@heroicons/react/24/solid";
 import { SiGooglemaps } from "react-icons/si";
 
-const TopHeader = () => {
+const TopFooter = () => {
   return (
     <>
       <div className="md:grid grid-cols-3 gap-7">
@@ -58,4 +58,4 @@ const TopHeader = () => {
   );
 };
 
-export default TopHeader;
+export default TopFooter;
