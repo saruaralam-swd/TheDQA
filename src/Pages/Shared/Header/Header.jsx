@@ -33,22 +33,30 @@ const Header = () => {
 
         <div className="flex items-center justify-center gap-4">
           <div>
-            <Link to="/" className="text-orange-500 font-semibold">
+            <Link className="hover:text-orange-500 font-normal transition-all duration-300">
               Home
             </Link>
           </div>
           <div>
-            <Link>Services</Link>
+            <Link className="hover:text-orange-500 font-normal transition-all duration-300">
+              Services
+            </Link>
           </div>
           <div>
-            <Link>About</Link>
+            <Link className="hover:text-orange-500 font-normal transition-all duration-300">
+              About
+            </Link>
           </div>
 
           <div>
-            <Link>Blog</Link>
+            <Link className="hover:text-orange-500 font-normal transition-all duration-300">
+              Blog
+            </Link>
           </div>
           <div>
-            <Link>Contact Us</Link>
+            <Link className="hover:text-orange-500 font-normal transition-all duration-300">
+              Contact Us
+            </Link>
           </div>
         </div>
 
