@@ -5,7 +5,7 @@ import { SiGooglemaps } from "react-icons/si";
 const TopFooter = () => {
   return (
     <>
-      <div className="md:grid grid-cols-3 gap-7">
+      <div className="md:grid grid-cols-3 gap-7 my-10">
         <div className="bg-[#03082D] p-5 overflow-hidden">
           <div className="flex justify-between items-center">
             <div className="flex items-center gap-4">
