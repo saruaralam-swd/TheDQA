@@ -1,57 +1,108 @@
 import React from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay, Keyboard, Navigation, Pagination } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
+import "./SlideCss/HomeServices.css";
 
 const HomeServices = () => {
+  const slides = [
+    {
+      _id: 1,
+      title: `Social Media Marking`,
+      text: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident numquam placeat impedit maxime, sit distinctio atque nobis tenetur suscipit debitis.",
+    },
+    {
+      _id: 2,
+      title: "Content Writing",
+      text: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident numquam placeat impedit maxime, sit distinctio atque nobis tenetur suscipit debitis.",
+    },
+    {
+      _id: 3,
+      title: "Social Media Marking",
+      text: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident numquam placeat impedit maxime, sit distinctio atque nobis tenetur suscipit debitis.",
+    },
+    {
+      _id: 4,
+      title: "Social Media Marking",
+      text: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident numquam placeat impedit maxime, sit distinctio atque nobis tenetur suscipit debitis.",
+    },
+    {
+      _id: 5,
+      title: "Social Media Marking",
+      text: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident numquam placeat impedit maxime, sit distinctio atque nobis tenetur suscipit debitis.",
+    },
+    {
+      _id: 6,
+      title: "Social Media Marking",
+      text: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident numquam placeat impedit maxime, sit distinctio atque nobis tenetur suscipit debitis.",
+    },
+  ];
+
   return (
     <section className="min-h-[600px] bg-gray-200 px-10 py-8 border-2 border-orange-900">
       <div className="flex justify-between">
-        <h6 className="font-xs text-green-500 mb-3">About Us</h6>
+        <h6 className="font-xs text-green-500">About Us</h6>
         <button className="bg-orange-500 text-white font-semibold px-5 py-2 rounded-md">
           View Details
         </button>
       </div>
 
-      <h2 className="text-3xl font-semibold">
+      <h2 className="text-3xl font-semibold mb-5">
         We Provide Best <br /> business Process <br />
         Outsourcing (BPO) <br /> Services
       </h2>
 
-      <div className="grid grid-cols-3 gap-3 mt-10">
-        <div className="min:h-[200px] bg-white text-black px-8 py-4">
-          <h4 className="text-xl font-semibold">Social Media Marking</h4>
-          <p className="my-5">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident
-            numquam placeat impedit maxime, sit distinctio atque nobis tenetur
-            suscipit debitis.
-          </p>
-          <button className="bg-gray-100 px-4 py-2 rounded-sm">
-            Read More
-          </button>
-        </div>
-
-        <div className="min:h-[200px] bg-white text-black px-8 py-4">
-          <h4 className="text-xl font-semibold">Content Writing</h4>
-          <p className="my-5">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident
-            numquam placeat impedit maxime, sit distinctio atque nobis tenetur
-            suscipit debitis.
-          </p>
-          <button className="bg-gray-100 px-4 py-2 rounded-sm">
-            Read More
-          </button>
-        </div>
-
-        <div className="min:h-[200px] bg-white text-black px-8 py-4">
-          <h4 className="text-xl font-semibold">Social Media Marking</h4>
-          <p className="my-5">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident
-            numquam placeat impedit maxime, sit distinctio atque nobis tenetur
-            suscipit debitis.
-          </p>
-          <button className="bg-gray-100 px-4 py-2 rounded-sm">
-            Read More
-          </button>
-        </div>
-      </div>
+      <Swiper
+        style={{
+          "--swiper-navigation-size": "22px",
+        }}
+        breakpoints={{
+          640: {
+            width: 640,
+            slidesPerView: 1,
+          },
+          768: {
+            width: 640,
+            slidesPerView: 3,
+          },
+          1024: {
+            width: 1024,
+            slidesPerView: 3,
+          },
+        }}
+        slidesPerView={1}
+        spaceBetween={30}
+        autoplay={{
+          delay: 3000,
+          disableOnInteraction: false,
+        }}
+        pagination={{
+          clickable: true,
+        }}
+        navigation={true}
+        freeMode={true}
+        loop={true}
+        keyboard={{
+          enabled: true,
+        }}
+        modules={[Autoplay, Navigation, Keyboard]}
+        className="mySwiper"
+      >
+        {slides.map((slide) => (
+          <SwiperSlide
+            className="bg-white px-8 py-5 rounded-md"
+            key={slide._id}
+          >
+            <h4 className="text-xl font-semibold">{slide.title}</h4>
+            <p className="my-4">{slide.text}</p>
+            <button className="text-orange-500 bg-gray-200 px-4 py-2 rounded-md">
+              Read More
+            </button>
+          </SwiperSlide>
+        ))}
+      </Swiper>
     </section>
   );
 };
