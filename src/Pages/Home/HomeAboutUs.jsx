@@ -1,5 +1,6 @@
 import { ArrowLongRightIcon } from "@heroicons/react/24/solid";
 import React from "react";
+import aboutUsImg from "../../assets/AboutUs.webp";
 
 const HomeAboutUs = () => {
   return (
@@ -43,7 +44,9 @@ const HomeAboutUs = () => {
         </div>
 
         <div className="md:w-1/2 order-1 flex items-center">
-          image coming soon
+          <div>
+            <img src={aboutUsImg} className="lg:w-4/5" alt="" />
+          </div>
         </div>
       </section>
     </>
