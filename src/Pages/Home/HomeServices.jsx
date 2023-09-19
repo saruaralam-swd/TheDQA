@@ -41,9 +41,9 @@ const HomeServices = () => {
   ];
 
   return (
-    <section className="min-h-[600px] bg-gray-200 px-10 py-8 border-2 border-orange-900">
-      <div className="flex justify-between">
-        <h6 className="font-xs text-green-500">About Us</h6>
+    <section className="min-h-[600px] bg-gray-200 px-10 py-8">
+      <div className="flex justify-between items-center">
+        <h6 className="font-xs text-green-500">Services</h6>
         <button className="bg-orange-500 text-white font-semibold px-5 py-2 rounded-md">
           View Details
         </button>
@@ -56,7 +56,7 @@ const HomeServices = () => {
 
       <Swiper
         style={{
-          "--swiper-navigation-size": "22px",
+          "--swiper-navigation-size": "20px",
         }}
         breakpoints={{
           640: {
