@@ -1,6 +1,6 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Keyboard, Navigation } from "swiper/modules";
+import { Autoplay, Keyboard, Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
@@ -67,7 +67,7 @@ const HomeTestimonial = () => {
   ];
 
   return (
-    <section className="min-h-[500px] bg-gray-200 px-10 py-8 ">
+    <section className="md:min-h-[450px] px-10 py-8 bg-gray-100">
       <div className="flex justify-between items-center">
         <h6 className="font-xs text-green-500">Testimonial</h6>
         <div className="flex gap-3">
@@ -104,18 +104,22 @@ const HomeTestimonial = () => {
         pagination={{
           clickable: true,
         }}
+        autoplay={{
+          delay: 3000,
+          disableOnInteraction: false,
+        }}
         // navigation={true}
-        // freeMode={true}
+        freeMode={true}
         loop={true}
         keyboard={{
           enabled: true,
         }}
-        modules={[Navigation, Keyboard]}
+        modules={[Navigation, Keyboard, Autoplay]}
         className="mySwiper"
       >
         {slides.map((slide) => (
           <SwiperSlide
-            className="bg-white px-5 py-4 rounded-md"
+            className="bg-white pl-5 pr-20 md:px-5 py-4 rounded-md"
             key={slide._id}
           >
             <div className="flex justify-between items-center">

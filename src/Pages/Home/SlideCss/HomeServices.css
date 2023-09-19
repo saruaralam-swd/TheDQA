@@ -17,3 +17,10 @@
 .custom-shadow {
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
 }
+
+.bg {
+  background-image: url("../../../assets/HomeWhoChoseUsIcosBg.png");
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-size: cover;
+}
