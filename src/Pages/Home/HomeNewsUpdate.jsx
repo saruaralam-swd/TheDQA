@@ -86,20 +86,20 @@ const HomeNewsUpdate = () => {
               <div className="flex items-center gap-4">
                 <div className="flex items-center gap-1">
                   <RxPerson className="w-4 h-4 text-green-500" />
-                  <p className="text-xs">By John</p>
+                  <p className="text-xs">By Jeason</p>
                 </div>
                 <div className="flex items-center gap-1">
                   <RxCalendar className="w-4 h-4 text-green-500" />
-                  <p className="text-xs">16 April</p>
+                  <p className="text-xs">18 April</p>
                 </div>
                 <div className="flex items-center gap-1">
                   <BiCommentDots className="w-4 h-4 text-green-500" />
-                  <p className="text-xs">3 Comments</p>
+                  <p className="text-xs">7 Comments</p>
                 </div>
               </div>
 
               <h5 className="font-semibold">
-                10 Things to Outsource To a Busness Process Outsourcing (BPO)
+                5 work flow Automation Tips for Your Team
               </h5>
               <p className="text-sm">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit.
@@ -116,20 +116,20 @@ const HomeNewsUpdate = () => {
               <div className="flex items-center gap-4">
                 <div className="flex items-center gap-1">
                   <RxPerson className="w-4 h-4 text-green-500" />
-                  <p className="text-xs">By John</p>
+                  <p className="text-xs">By Smith</p>
                 </div>
                 <div className="flex items-center gap-1">
                   <RxCalendar className="w-4 h-4 text-green-500" />
-                  <p className="text-xs">16 April</p>
+                  <p className="text-xs">20 April</p>
                 </div>
                 <div className="flex items-center gap-1">
                   <BiCommentDots className="w-4 h-4 text-green-500" />
-                  <p className="text-xs">3 Comments</p>
+                  <p className="text-xs">1 Comments</p>
                 </div>
               </div>
 
               <h5 className="font-semibold">
-                10 Things to Outsource To a Busness Process Outsourcing (BPO)
+                How to use virtually Assistant effectively
               </h5>
               <p className="text-sm">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit.

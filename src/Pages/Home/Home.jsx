@@ -4,6 +4,7 @@ import HomeAboutUs from "./HomeAboutUs";
 import HomeServices from "./HomeServices";
 import HomeTestimonial from "./HomeTestimonial";
 import HomeNewsUpdate from "./HomeNewsUpdate";
+import HomeHowItWork from "./HomeHowItWork";
 
 const Home = () => {
   return (
@@ -11,6 +12,7 @@ const Home = () => {
       <HomeBanner />
       <HomeAboutUs />
       <HomeServices />
+      <HomeHowItWork />
       <HomeTestimonial />
       <HomeNewsUpdate />
     </>
