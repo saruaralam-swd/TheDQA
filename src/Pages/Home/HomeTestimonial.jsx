@@ -69,7 +69,9 @@ const HomeTestimonial = () => {
   return (
     <section className="md:min-h-[450px] px-10 py-8 bg-gray-100">
       <div className="flex justify-between items-center">
-        <h6 className="font-xs text-green-500">Testimonial</h6>
+        <h6 className="font-xs text-green-500 mb-3 font-semibold">
+          Testimonial
+        </h6>
         <div className="flex gap-3">
           <span className="bg-gray-100 hover:bg-gray-200 p-3 rounded-sm">
             <ArrowLongLeftIcon className="w-5 h-5" />

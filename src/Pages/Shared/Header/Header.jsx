@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import TopHeader from "./TopHeader";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import {
   Bars3Icon,
   ArrowRightOnRectangleIcon,
@@ -28,46 +28,88 @@ const Header = () => {
       {/* Desktop Navbar */}
       <section className="hidden md:flex justify-between  px-8 py-5 ">
         <nav className="text-3xl font-bold text-[#32cd32]">
-          <Link to="/">Theif</Link>
+          <Link to="home">Theif</Link>
         </nav>
 
         <div className="flex items-center justify-center gap-4">
           <div>
-            <Link className="hover:text-orange-500 font-normal transition-all duration-300">
+            <NavLink
+              to="home"
+              className={({ isActive }) =>
+                isActive
+                  ? "hover:text-orange-500 text-orange-500 font-normal transition-all duration-300"
+                  : "hover:text-orange-500 font-normal transition-all duration-300"
+              }
+            >
               Home
-            </Link>
+            </NavLink>
           </div>
           <div>
-            <Link className="hover:text-orange-500 font-normal transition-all duration-300">
+            <NavLink
+              to="services"
+              className={({ isActive }) =>
+                isActive
+                  ? "hover:text-orange-500 text-orange-500 font-normal transition-all duration-300"
+                  : "hover:text-orange-500 font-normal transition-all duration-300"
+              }
+            >
               Services
-            </Link>
+            </NavLink>
           </div>
           <div>
-            <Link className="hover:text-orange-500 font-normal transition-all duration-300">
-              About
-            </Link>
+            <NavLink
+              to="aboutUs"
+              className={({ isActive }) =>
+                isActive
+                  ? "hover:text-orange-500 text-orange-500 font-normal transition-all duration-300"
+                  : "hover:text-orange-500 font-normal transition-all duration-300"
+              }
+            >
+              About Us
+            </NavLink>
           </div>
 
           <div>
-            <Link className="hover:text-orange-500 font-normal transition-all duration-300">
+            <NavLink
+              to="blog"
+              className={({ isActive }) =>
+                isActive
+                  ? "hover:text-orange-500 text-orange-500 font-normal transition-all duration-300"
+                  : "hover:text-orange-500 font-normal transition-all duration-300"
+              }
+            >
               Blog
-            </Link>
+            </NavLink>
           </div>
           <div>
-            <Link className="hover:text-orange-500 font-normal transition-all duration-300">
+            <NavLink
+              to="contactUs"
+              className={({ isActive }) =>
+                isActive
+                  ? "hover:text-orange-500 text-orange-500 font-normal transition-all duration-300"
+                  : "hover:text-orange-500 font-normal transition-all duration-300"
+              }
+            >
               Contact Us
-            </Link>
+            </NavLink>
           </div>
         </div>
 
         <div className="flex gap-4 items-center justify-center">
           <div>
-            <Link className="flex items-center justify-center gap-2">
+            <NavLink
+              to="blog"
+              className={({ isActive }) =>
+                isActive
+                  ? "hover:text-orange-500 text-orange-500 flex items-center gap-2 font-normal transition-all duration-300"
+                  : "hover:text-orange-500 flex items-center gap-2 font-normal transition-all duration-300 "
+              }
+            >
               <span>
-                <GrLanguage className="w-4 h-4" />
+                <GrLanguage className="w-4 h-4 inline-block" />
               </span>
               <span>Blog</span>
-            </Link>
+            </NavLink>
           </div>
           <button className="px-4 py-2 bg-orange-500 text-white rounded-md">
             Free Consultation

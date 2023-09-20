@@ -8,7 +8,9 @@ const HomeHowItWork = () => {
         {/* left */}
         <div className="md:h-[600px] flex items-center">
           <div>
-            <h6 className="font-xs text-green-500">How It Work:</h6>
+            <h6 className="font-xs text-green-500 mb-3 font-semibold">
+              How It Work:
+            </h6>
             <h6>
               <h2 className="text-3xl font-semibold my-4">
                 How Thief Personalized Approach

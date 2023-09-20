@@ -8,7 +8,9 @@ const HomeAboutUs = () => {
       <section className="md:flex min-h-[500px] px-10 py-8">
         <div className="md:w-1/2 order-2 flex items-center">
           <div>
-            <h6 className="font-xs text-green-500 mb-3">About Us</h6>
+            <h6 className="font-xs text-green-500 mb-3 font-semibold">
+              About Us
+            </h6>
             <h2 className="text-3xl font-semibold">
               Our Business is Your life <br /> Making Easier & Comfortable
             </h2>

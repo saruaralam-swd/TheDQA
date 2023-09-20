@@ -43,7 +43,7 @@ const HomeServices = () => {
   return (
     <section className="min-h-[600px] bg-gray-200 px-10 py-8">
       <div className="flex justify-between items-center">
-        <h6 className="font-xs text-green-500">Services</h6>
+        <h6 className="font-xs text-green-500 mb-3 font-semibold">Services</h6>
         <button className="bg-orange-500 text-white font-semibold px-5 py-2 rounded-md">
           View Details
         </button>
