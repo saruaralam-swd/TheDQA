@@ -3,6 +3,10 @@ import { Link } from "react-router-dom";
 import { RxPerson, RxCalendar } from "react-icons/rx";
 import { BiCommentDots } from "react-icons/bi";
 import "./SlideCss/HomeServices.css";
+import newsUpdateLeft from "../../assets/newsUpdateLeft.png";
+import people1 from "../../assets/people-1.png";
+import people2 from "../../assets/people-2.png";
+import people3 from "../../assets/people-3.png";
 
 const HomeNewsUpdate = () => {
   return (
@@ -18,8 +22,8 @@ const HomeNewsUpdate = () => {
         {/* left side news update */}
         <div className="border border-gray-100 rounded-sm  custom-shadow p-3 space-y-3 mb-10 md:mb-0">
           <img
-            src=""
-            className="w-full h-[250px] border"
+            src={newsUpdateLeft}
+            className="w-full object-cover border"
             alt="Customer support image "
           />
           <div className="flex items-center gap-4">
@@ -51,7 +55,7 @@ const HomeNewsUpdate = () => {
         {/* Right side news update */}
         <div>
           <div className="grid grid-cols-4 custom-shadow border rounded-sm p-1">
-            <img src="" className="w-full" alt="image" />
+            <img src={people1} className="w-full" alt="image" />
             <div className="col-span-3 p-2 space-y-1">
               <div className="flex items-center gap-4">
                 <div className="flex items-center gap-1">
@@ -81,7 +85,7 @@ const HomeNewsUpdate = () => {
           </div>
 
           <div className="grid grid-cols-4 custom-shadow border rounded-sm p-1 my-5">
-            <img src="" className="w-full " alt="image" />
+            <img src={people2} className="w-full " alt="image" />
             <div className="col-span-3 p-2 space-y-1">
               <div className="flex items-center gap-4">
                 <div className="flex items-center gap-1">
@@ -111,7 +115,7 @@ const HomeNewsUpdate = () => {
           </div>
 
           <div className="grid grid-cols-4 custom-shadow border rounded-sm p-1">
-            <img src="" className="w-full" alt="image" />
+            <img src={people3} className="w-full" alt="image" />
             <div className="col-span-3 p-2 space-y-1">
               <div className="flex items-center gap-4">
                 <div className="flex items-center gap-1">

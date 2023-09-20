@@ -1,6 +1,6 @@
 import React from "react";
 import bannerImg from "../../assets/bannerImg.webp";
-import backgroundImage from "../../assets/homeBannerBg.png";
+import backgroundImage from "../../assets/Frame56.jpg";
 
 const HomeBanner = () => {
   const divStyle = {
@@ -16,10 +16,12 @@ const HomeBanner = () => {
     >
       <div className="md:w-1/2 order-1 flex items-center">
         <div>
-          <h2 className="text-6xl md:text-5xl font-semibold  mb-5">
-            Best Business <br /> Process OutSourcing <br /> (BPO) for Your{" "}
+          <h2 className="text-6xl md:text-5xl font-semibold mb-5 space-y-3">
+            <span className="inline-block">Best Business</span> <br />
+            <span className="inline-block">Process OutSourcing</span> <br />
+            <span className="inline-block">(BPO) for Your </span>
             <br />
-            Business
+            <span className="inline-block">Business</span>
           </h2>
           <button className="bg-orange-500 text-white font-semibold px-5 py-2 rounded-md">
             Get Started
