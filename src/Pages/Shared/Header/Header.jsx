@@ -44,6 +44,7 @@ const Header = () => {
               Home
             </NavLink>
           </div>
+
           <div>
             <NavLink
               to="services"
@@ -56,6 +57,7 @@ const Header = () => {
               Services
             </NavLink>
           </div>
+
           <div>
             <NavLink
               to="aboutUs"
@@ -71,18 +73,6 @@ const Header = () => {
 
           <div>
             <NavLink
-              to="blog"
-              className={({ isActive }) =>
-                isActive
-                  ? "hover:text-orange-500 text-orange-500 font-normal transition-all duration-300"
-                  : "hover:text-orange-500 font-normal transition-all duration-300"
-              }
-            >
-              Blog
-            </NavLink>
-          </div>
-          <div>
-            <NavLink
               to="contactUs"
               className={({ isActive }) =>
                 isActive
@@ -91,6 +81,19 @@ const Header = () => {
               }
             >
               Contact Us
+            </NavLink>
+          </div>
+
+          <div>
+            <NavLink
+              to="blog"
+              className={({ isActive }) =>
+                isActive
+                  ? "hover:text-orange-500 text-orange-500 font-normal transition-all duration-300"
+                  : "hover:text-orange-500 font-normal transition-all duration-300"
+              }
+            >
+              Blog
             </NavLink>
           </div>
         </div>
