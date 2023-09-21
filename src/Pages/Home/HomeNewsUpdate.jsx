@@ -2,10 +2,10 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { RxPerson, RxCalendar } from "react-icons/rx";
 import { BiCommentDots } from "react-icons/bi";
-import newsUpdateLeft from "../../assets/HomePage/newsUpdateLeft.png";
-import people1 from "../../assets/HomePage/people-1.png";
-import people2 from "../../assets/HomePage/people-2.png";
-import people3 from "../../assets/HomePage/people-3.png";
+import newsUpdateLeft from "../../assets/HomePage/newsUpdateLeft.webp";
+import people1 from "../../assets/HomePage/people-1.webp";
+import people2 from "../../assets/HomePage/people-2.webp";
+import people3 from "../../assets/HomePage/people-3.webp";
 import "./SlideCss/HomeServices.css";
 
 const HomeNewsUpdate = () => {
