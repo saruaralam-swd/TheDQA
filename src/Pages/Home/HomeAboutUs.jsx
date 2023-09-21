@@ -1,5 +1,5 @@
-import { ArrowLongRightIcon } from "@heroicons/react/24/solid";
 import React from "react";
+import { ArrowLongRightIcon } from "@heroicons/react/24/solid";
 import aboutUsImg from "../../assets/AboutUs.webp";
 
 const HomeAboutUs = () => {
