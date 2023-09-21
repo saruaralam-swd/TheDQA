@@ -1,6 +1,6 @@
 import React from "react";
-import bannerImg from "../../assets/bannerImg.webp";
-import backgroundImage from "../../assets/Frame56.jpg";
+import bannerImg from "../../assets/HomePage/HomeBanner.webp";
+import backgroundImage from "../../assets/HomePage/Frame56.jpg";
 
 const HomeBanner = () => {
   const divStyle = {
@@ -11,7 +11,7 @@ const HomeBanner = () => {
 
   return (
     <section
-      className="md:flex min-h-[300px] px-5 py-4 md:px-10 md:py-8"
+      className="md:flex min-h-[500px] px-5 py-4 md:px-10 md:py-8"
       style={divStyle}
     >
       <div className="md:w-1/2 order-1 flex items-center">

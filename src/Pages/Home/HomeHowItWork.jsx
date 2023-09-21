@@ -1,5 +1,5 @@
 import React from "react";
-import img from "../../../src/assets/HowToWork.webp";
+import img from "../../assets/HomePage/HomeHowToWork.webp";
 
 const HomeHowItWork = () => {
   return (

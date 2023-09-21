@@ -1,24 +1,14 @@
 import React from "react";
-import banner from "../../assets/ContactUsPage/Banner.webp";
 import phoneCall from "../../assets/ContactUsPage/phone-call.png";
 import email from "../../assets/ContactUsPage/email.png";
 import location from "../../assets/ContactUsPage/location.png";
 import map from "../../assets/ContactUsPage/map.png";
 
 const ContactUs = () => {
-  const bg = {
-    backgroundImage: `url(${banner})`,
-    backgroundSize: "cover",
-    backgroundRepeat: "no-repeat",
-  };
-
   return (
     <>
-      <section
-        className="h-[300px] flex items-center justify-center"
-        style={bg}
-      >
-        <h2 className="text-5xl font-semibold text-white">Contact Us</h2>
+      <section className="h-[300px] bg-gray-100 flex items-center justify-center">
+        <h2 className="text-5xl font-semibold">Contact Us</h2>
       </section>
 
       <div className="md:grid grid-cols-3 space-y-3 md:space-y-0 gap-4 px-5 py-4 md:px-10 md:py-8">

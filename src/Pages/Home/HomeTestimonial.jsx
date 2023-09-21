@@ -5,8 +5,8 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import "./SlideCss/HomeServices.css";
-import userImage from "../../../src/assets/user.jpg";
-import icon from "../../../src/assets/icon.jpg";
+import userImage from "../../../src/assets/HomePage/user.jpg";
+import icon from "../../../src/assets/HomePage/icon.jpg";
 import {
   ArrowLongLeftIcon,
   ArrowLongRightIcon,

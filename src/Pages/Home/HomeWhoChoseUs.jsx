@@ -1,8 +1,8 @@
 import React from "react";
-import img from "../../assets/whoChoseUs.png";
-import customerService from "../../assets/customer-service.png";
-import document from "../../assets/document.png";
-import clock from "../../assets/clock.png";
+import img from "../../assets/HomePage/HomeWhoChoseUs.png";
+import talkIcon from "../../assets/HomePage/customer-service.png";
+import DocumentIcon from "../../assets/HomePage/document.png";
+import ClockIcon from "../../assets/HomePage/clock.png";
 import "./SlideCss/HomeServices.css";
 
 const HomeWhoChoseUs = () => {
@@ -30,7 +30,7 @@ const HomeWhoChoseUs = () => {
                   <h4 className="text-xl font-semibold">
                     Top Customer Services
                   </h4>
-                  <img className="" src={customerService} alt="" />
+                  <img className="" src={talkIcon} alt="" />
                 </div>
                 <p className="text-sm">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -43,7 +43,7 @@ const HomeWhoChoseUs = () => {
               <div>
                 <div className="flex justify-between">
                   <h4 className="text-xl font-semibold">Highly Personalized</h4>
-                  <img className="" src={document} alt="" />
+                  <img className="" src={DocumentIcon} alt="" />
                 </div>
                 <p className="text-sm">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -56,7 +56,7 @@ const HomeWhoChoseUs = () => {
               <div>
                 <div className="flex justify-between">
                   <h4 className="text-xl font-semibold">Passionate Talent</h4>
-                  <img className="" src={clock} alt="" />
+                  <img className="" src={ClockIcon} alt="" />
                 </div>
                 <p className="text-sm">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -69,7 +69,7 @@ const HomeWhoChoseUs = () => {
               <div>
                 <div className="flex justify-between">
                   <h4 className="text-xl font-semibold">Quick Response Team</h4>
-                  <img className="" src={clock} alt="" />
+                  <img className="" src={ClockIcon} alt="" />
                 </div>
                 <p className="text-sm">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
