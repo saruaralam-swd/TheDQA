@@ -18,7 +18,7 @@ const TopFooter = () => {
               </div>
             </div>
 
-            {/* <PhoneIcon className="w-10 h-10 text-[#181C3C] inline-block" /> */}
+            <PhoneIcon className="w-10 h-10 text-[#181C3C] inline-block" />
           </div>
         </div>
 
@@ -34,12 +34,12 @@ const TopFooter = () => {
               </div>
             </div>
 
-            {/* <EnvelopeIcon className="w-10 h-10 text-[#181C3C] inline-block" /> */}
+            <EnvelopeIcon className="w-10 h-10 text-[#181C3C] inline-block" />
           </div>
         </div>
 
         <div className="bg-[#03082D] p-5 overflow-hidden">
-          <div className=" gap-20">
+          <div className="flex justify-between">
             <div className="flex items-center gap-4">
               <p className="bg-orange-500 p-2 rounded-md">
                 <SiGooglemaps className="w-5 h-5" />
@@ -50,7 +50,7 @@ const TopFooter = () => {
               </div>
             </div>
 
-            {/* <SiGooglemaps className="w-10 h-10 text-[#181C3C] inline-block" /> */}
+            <SiGooglemaps className="w-10 h-10 text-[#181C3C] inline-block" />
           </div>
         </div>
       </div>

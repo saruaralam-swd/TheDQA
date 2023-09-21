@@ -12,27 +12,6 @@ const AboutUs = () => {
     backgroundRepeat: "no-repeat",
   };
 
-  const slides = [
-    {
-      _id: 1,
-      title: "",
-      para1: "",
-      para2: "",
-    },
-    {
-      _id: 1,
-      title: "",
-      para1: "",
-      para2: "",
-    },
-    {
-      _id: 1,
-      title: "",
-      para1: "",
-      para2: "",
-    },
-  ];
-
   return (
     <>
       <section
@@ -114,6 +93,23 @@ const AboutUs = () => {
                 cols="30"
                 rows="5"
               ></textarea>
+
+              <input
+                id="draft"
+                class="peer/draft"
+                type="checkbox"
+                name="status"
+              />
+              <label for="draft" className="ml-3">
+                Accept{" "}
+                <span className="text-orange-500 font-semibold">
+                  Terms & Condition
+                </span>{" "}
+                And{" "}
+                <span className="text-orange-500 font-semibold">
+                  Privacy Policy
+                </span>
+              </label>
 
               <button
                 onClick={(e) => e.preventDefault()}
