@@ -3,15 +3,18 @@ import phoneCall from "../../assets/ContactUsPage/phone-call.png";
 import email from "../../assets/ContactUsPage/email.png";
 import location from "../../assets/ContactUsPage/location.png";
 import map from "../../assets/ContactUsPage/map.png";
+import { useLocation } from "react-router-dom";
 
 const ContactUs = () => {
+  const location = useLocation();
+
   return (
     <>
       <section className="h-[300px] bg-gray-100 flex items-center justify-center">
         <h2 className="text-5xl font-semibold">Contact Us</h2>
       </section>
 
-      <div className="md:grid grid-cols-3 space-y-3 md:space-y-0 gap-4 px-5 py-4 md:px-10 md:py-8">
+      <div className="md:grid grid-cols-3 space-y-3 md:space-y-0 gap-4 border my-12">
         <div className="px-8 py-4 border rounded-md text-center space-y-2">
           <img src={phoneCall} className="inline-block" alt="" />
           <h4>Phone Number</h4>
@@ -32,7 +35,13 @@ const ContactUs = () => {
         </div>
       </div>
 
-      <div className="min-h-[500px] md:flex gap-5  px-5 py-4 md:px-10 md:py-8">
+      <div
+        className={
+          location.pathname === "/contactUs"
+            ? "min-h-[500px] md:flex gap-5 border mt-12 mb-32"
+            : "min-h-[500px] md:flex gap-5 border my-12"
+        }
+      >
         <div className=" md:w-1/2">
           <img src={map} className="w-full object-cover" alt="" />
         </div>

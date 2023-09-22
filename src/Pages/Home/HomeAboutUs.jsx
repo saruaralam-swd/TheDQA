@@ -5,7 +5,7 @@ import aboutUsImg from "../../assets/HomePage/HomeAboutUs.webp";
 const HomeAboutUs = () => {
   return (
     <>
-      <section className="md:flex min-h-[500px] px-10 py-8">
+      <section className="md:flex min-h-[500px] p-5 md:p-10 my-12 border">
         <div className="md:w-1/2 order-2 flex items-center">
           <div>
             <h6 className="font-xs text-green-500 mb-3 font-semibold">
@@ -45,7 +45,7 @@ const HomeAboutUs = () => {
           </div>
         </div>
 
-        <div className="md:w-1/2 order-1 flex items-center">
+        <div className="md:w-1/2 order-1 flex items-center mt-10 md:mt-0">
           <div>
             <img src={aboutUsImg} className="lg:w-4/5" alt="" />
           </div>

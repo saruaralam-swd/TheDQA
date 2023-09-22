@@ -12,6 +12,8 @@ import {
   ArrowLongRightIcon,
   StarIcon,
 } from "@heroicons/react/24/solid";
+// import homeTestimonialImage from "../../assets/HomePage/HomeTestimonial-2.webp";
+import homeTestimonialImage from "../../assets/HomePage/HomeTestimonial.webp";
 
 const HomeTestimonial = () => {
   const slides = [
@@ -67,7 +69,10 @@ const HomeTestimonial = () => {
   ];
 
   return (
-    <section className="md:min-h-[450px] px-10 py-8 bg-gray-100">
+    <section
+      className="md:min-h-[450px] p-5 md:p-10 my-12 bg-no-repeat bg-contain border"
+      style={{ backgroundImage: `url(${homeTestimonialImage})` }}
+    >
       <div className="flex justify-between items-center">
         <h6 className="font-xs text-green-500 mb-3 font-semibold">
           Testimonial

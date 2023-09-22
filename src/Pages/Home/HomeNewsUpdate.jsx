@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { RxPerson, RxCalendar } from "react-icons/rx";
 import { BiCommentDots } from "react-icons/bi";
 import newsUpdateLeft from "../../assets/HomePage/newsUpdateLeft.webp";
@@ -9,8 +9,16 @@ import people3 from "../../assets/HomePage/people-3.webp";
 import "./SlideCss/HomeServices.css";
 
 const HomeNewsUpdate = () => {
+  const location = useLocation();
+
   return (
-    <section className="px-10 py-8">
+    <section
+      className={
+        location.pathname === "/" && "/home"
+          ? "mt-12 mb-32 border p-5 md:p-10"
+          : "my-12 border p-5 md:p-10"
+      }
+    >
       <h6 className="font-xs text-green-500 mb-3 font-semibold text-center">
         News Update
       </h6>
@@ -21,8 +29,7 @@ const HomeNewsUpdate = () => {
       </h6>
 
       <div className="md:grid grid-cols-2 gap-5">
-        {/* left side news update */}
-        <div className="border border-gray-100 rounded-sm  custom-shadow p-3 space-y-3 mb-10 md:mb-0">
+        <div className="border border-gray-100 rounded-sm custom-shadow p-3 space-y-3 mb-10 md:mb-0">
           <img
             src={newsUpdateLeft}
             className="w-full object-cover border"
@@ -55,7 +62,7 @@ const HomeNewsUpdate = () => {
         </div>
 
         {/* Right side news update */}
-        <div>
+        <div className="mb-20 md:mb-0">
           <div className="grid grid-cols-4 custom-shadow border rounded-sm p-1">
             <img src={people1} className="w-full" alt="image" />
             <div className="col-span-3 p-2 space-y-1">

@@ -3,10 +3,17 @@ import project1 from "../../assets/AboutUsPage/project-1.webp";
 import project2 from "../../assets/AboutUsPage/project-2.webp";
 import project3 from "../../assets/AboutUsPage/project-3.webp";
 import project4 from "../../assets/AboutUsPage/project-4.webp";
+import { useLocation } from "react-router-dom";
 
 const Projects = () => {
+  const location = useLocation();
+
   return (
-    <section className="px- py-12">
+    <section
+      className={
+        location.pathname === "/aboutUs" ? "border mt-12 mb-32" : "border my-12"
+      }
+    >
       <h6 className="font-xs text-green-500 mb-3 font-semibold text-center">
         Projects
       </h6>

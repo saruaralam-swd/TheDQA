@@ -41,7 +41,7 @@ const HomeServices = () => {
   ];
 
   return (
-    <section className="min-h-[500px] px-10 py-8">
+    <section className="min-h-[500px] p-5 md:p-10 my-12 border">
       <div className="flex justify-between items-center">
         <h6 className="font-xs text-green-500 mb-3 font-semibold">Services</h6>
         <button className="bg-orange-500 text-white font-semibold px-5 py-2 rounded-md">
@@ -92,7 +92,7 @@ const HomeServices = () => {
       >
         {slides.map((slide) => (
           <SwiperSlide
-            className="bg-white px-8 py-5 rounded-md"
+            className="bg-white md:px-8 md:py-5 rounded-md"
             key={slide._id}
           >
             <h4 className="text-xl font-semibold">{slide.title}</h4>

@@ -38,7 +38,7 @@ const Header = () => {
               className={({ isActive }) =>
                 isActive
                   ? "hover:text-orange-500 text-orange-500 font-normal transition-all duration-300"
-                  : "hover:text-orange-500 font-normal transition-all duration-300"
+                  : "hover:text-orange-500 text- font-normal transition-all duration-300"
               }
             >
               Home
@@ -125,7 +125,9 @@ const Header = () => {
         <div className="bg-gray-100 text-gray-800 flex justify-between md:hidden">
           <div>
             <div className="block cursor-pointer p-4 font-bold">
-              <Link to="/">Thief</Link>
+              <Link to="/" className="text-green-500 font-semibold text-2xl">
+                Thief
+              </Link>
             </div>
           </div>
 
