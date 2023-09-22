@@ -113,7 +113,7 @@ const DownFooter = () => {
           <form className="flex">
             <input
               type="email"
-              className="bg-[#0E1125] text-[#4D5E70] border-none px-4 py-3"
+              className="w-full bg-[#0E1125] text-[#4D5E70] px-4 py-3 border border-[#F97316] focus:outline-none focus:ring-1 focus:ring-orange-500"
               placeholder="Enter Your Gmail"
               name=""
               id=""

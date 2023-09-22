@@ -70,7 +70,7 @@ const HomeTestimonial = () => {
 
   return (
     <section
-      className="md:min-h-[450px] p-5 md:p-10 my-12 bg-no-repeat bg-contain border"
+      className="md:min-h-[450px] p-5 md:p-10 my-12 bg-no-repeat bg-contain"
       style={{ backgroundImage: `url(${homeTestimonialImage})` }}
     >
       <div className="flex justify-between items-center">

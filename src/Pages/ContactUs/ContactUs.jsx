@@ -14,7 +14,7 @@ const ContactUs = () => {
         <h2 className="text-5xl font-semibold">Contact Us</h2>
       </section>
 
-      <div className="md:grid grid-cols-3 space-y-3 md:space-y-0 gap-4 border my-12">
+      <div className="md:grid grid-cols-3 space-y-3 md:space-y-0 gap-4 my-12 p-5 md:p-10">
         <div className="px-8 py-4 border rounded-md text-center space-y-2">
           <img src={phoneCall} className="inline-block" alt="" />
           <h4>Phone Number</h4>
@@ -38,15 +38,21 @@ const ContactUs = () => {
       <div
         className={
           location.pathname === "/contactUs"
-            ? "min-h-[500px] md:flex gap-5 border mt-12 mb-32"
-            : "min-h-[500px] md:flex gap-5 border my-12"
+            ? "min-h-[500px] md:flex gap-5 mt-12 mb-32 p-5 md:p-10"
+            : "min-h-[500px] md:flex gap-5 my-12 p-5 md:p-10"
         }
       >
         <div className=" md:w-1/2">
           <img src={map} className="w-full object-cover" alt="" />
         </div>
 
-        <div className="flex items-center md:w-1/2 mt-5 md:mt-0">
+        <div
+          className={
+            location.pathname === "/contactUs"
+              ? "flex items-center md:w-1/2 mt-5 md:mt-0 mb-32"
+              : "flex items-center md:w-1/2 mt-5 md:mt-0"
+          }
+        >
           <div className="w-full">
             <h2 className="text-2xl font-semibold mb-5">Contact With Us!</h2>
             <form action="" className="space-y-4">

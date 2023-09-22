@@ -15,8 +15,8 @@ const HomeNewsUpdate = () => {
     <section
       className={
         location.pathname === "/" && "/home"
-          ? "mt-12 mb-32 border p-5 md:p-10"
-          : "my-12 border p-5 md:p-10"
+          ? "mt-12 mb-32 p-5 md:p-10"
+          : "my-12 p-5 md:p-10"
       }
     >
       <h6 className="font-xs text-green-500 mb-3 font-semibold text-center">
@@ -63,7 +63,7 @@ const HomeNewsUpdate = () => {
 
         {/* Right side news update */}
         <div className="mb-20 md:mb-0">
-          <div className="grid grid-cols-4 custom-shadow border rounded-sm p-1">
+          <div className="md:grid grid-cols-4 custom-shadow border rounded-sm p-1">
             <img src={people1} className="w-full" alt="image" />
             <div className="col-span-3 p-2 space-y-1">
               <div className="flex items-center gap-4">
@@ -93,7 +93,7 @@ const HomeNewsUpdate = () => {
             </div>
           </div>
 
-          <div className="grid grid-cols-4 custom-shadow border rounded-sm p-1 my-5">
+          <div className="md:grid grid-cols-4 custom-shadow border rounded-sm p-1 my-5">
             <img src={people2} className="w-full " alt="image" />
             <div className="col-span-3 p-2 space-y-1">
               <div className="flex items-center gap-4">
@@ -123,7 +123,7 @@ const HomeNewsUpdate = () => {
             </div>
           </div>
 
-          <div className="grid grid-cols-4 custom-shadow border rounded-sm p-1">
+          <div className="md:grid grid-cols-4 custom-shadow border rounded-sm p-1">
             <img src={people3} className="w-full" alt="image" />
             <div className="col-span-3 p-2 space-y-1">
               <div className="flex items-center gap-4">

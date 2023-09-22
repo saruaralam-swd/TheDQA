@@ -40,8 +40,8 @@ const HomeWhoChoseUs = () => {
     <section
       className={
         location.pathname === "/services"
-          ? "min-h-[500px] mt-12 mb-32 border p-5 md:p-10"
-          : "min-h-[500px] my-12 border p-5 md:p-10"
+          ? "min-h-[500px] mt-12 mb-32  p-5 md:p-10"
+          : "min-h-[500px] my-12  p-5 md:p-10"
       }
     >
       <h6 className="font-xs text-green-500 mb-3 font-semibold text-center">
@@ -59,7 +59,13 @@ const HomeWhoChoseUs = () => {
         </div>
 
         <div className="col-span-2">
-          <div className="md:grid grid-cols-2 gap-4">
+          <div
+            className={
+              location.pathname === "/services"
+                ? "md:grid grid-cols-2 gap-4 mb-32"
+                : "md:grid grid-cols-2 gap-4"
+            }
+          >
             {slides.map((slide) => (
               <div key={slide._id} className="p-5 bg-gray-100 my-4 md:my-0">
                 <div>

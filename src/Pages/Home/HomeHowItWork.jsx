@@ -21,7 +21,7 @@ const HomeHowItWork = () => {
   ];
 
   return (
-    <section className="min-h-[600px] p-5 md:p-10 my-12 border">
+    <section className="min-h-[600px] p-5 md:p-10 my-12">
       <div className="md:grid grid-cols-2">
         <div className="md:h-[600px] flex items-center">
           <div>

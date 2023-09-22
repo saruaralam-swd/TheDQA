@@ -11,7 +11,9 @@ const Projects = () => {
   return (
     <section
       className={
-        location.pathname === "/aboutUs" ? "border mt-12 mb-32" : "border my-12"
+        location.pathname === "/aboutUs"
+          ? "mt-12 mb-32 p-5 md:p-10"
+          : "my-12 p-5 md:p-10"
       }
     >
       <h6 className="font-xs text-green-500 mb-3 font-semibold text-center">

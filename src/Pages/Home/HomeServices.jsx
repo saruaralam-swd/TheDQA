@@ -1,10 +1,11 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay, Keyboard, Navigation, Pagination } from "swiper/modules";
+import { Autoplay, Keyboard, Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import "./SlideCss/HomeServices.css";
+import x from "../../assets/HomePage/HomeServicesBg.webp";
 
 const HomeServices = () => {
   const slides = [
@@ -41,7 +42,10 @@ const HomeServices = () => {
   ];
 
   return (
-    <section className="min-h-[500px] p-5 md:p-10 my-12 border">
+    <section
+      className="min-h-[500px] p-5 md:p-10 my-12 border bg-no-repeat bg-cover bg-left-top"
+      style={{ backgroundImage: `url(${x})` }}
+    >
       <div className="flex justify-between items-center">
         <h6 className="font-xs text-green-500 mb-3 font-semibold">Services</h6>
         <button className="bg-orange-500 text-white font-semibold px-5 py-2 rounded-md">
@@ -92,12 +96,12 @@ const HomeServices = () => {
       >
         {slides.map((slide) => (
           <SwiperSlide
-            className="bg-white md:px-8 md:py-5 rounded-md"
+            className="bg-white px-4 py-5 md:px-8 md:py-5 rounded-md"
             key={slide._id}
           >
             <h4 className="text-xl font-semibold">{slide.title}</h4>
             <p className="my-4">{slide.text}</p>
-            <button className="text-orange-500 bg-gray-200 px-4 py-2 rounded-md">
+            <button className="text-orange-500 bg-gray-200 px-4 py-2">
               Read More
             </button>
           </SwiperSlide>
