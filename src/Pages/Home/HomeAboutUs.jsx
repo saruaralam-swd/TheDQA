@@ -15,9 +15,11 @@ const HomeAboutUs = () => {
               Our Business is Your life <br /> Making Easier & Comfortable
             </h2>
             <p className="my-3">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt
-              mollitia asperiores id autem nostrum accusantium quaerat quasi
-              officiis voluptates consequatur.
+              At Thief, we are a forward-thinking technology agency dedicated to
+              delivering cutting-edge solutions. With a team of experienced
+              professionals, we specialize in web and app development, IT
+              consulting, and more. Our mission is to empower businesses with
+              innovative technology, ensuring their success in the digital age
             </p>
             <div className="mb-3">
               <p className="font-semibold">

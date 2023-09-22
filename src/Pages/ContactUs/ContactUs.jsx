@@ -1,8 +1,8 @@
 import React from "react";
 import phoneCall from "../../assets/ContactUsPage/phone-call.png";
 import email from "../../assets/ContactUsPage/email.png";
-import location from "../../assets/ContactUsPage/location.png";
-import map from "../../assets/ContactUsPage/map.png";
+import locationIcon from "../../assets/ContactUsPage/location.png";
+import map from "../../assets/ContactUsPage/map.avif";
 import { useLocation } from "react-router-dom";
 
 const ContactUs = () => {
@@ -28,7 +28,7 @@ const ContactUs = () => {
           <p>Hello@Thief.com</p>
         </div>
         <div className="px-8 py-4 border rounded-md text-center space-y-2">
-          <img src={location} className="inline-block" alt="" />
+          <img src={locationIcon} className="inline-block" alt="" />
           <h4>Location</h4>
           <p>950 St Johns PI Brokely, NY, United State</p>
           <p>123, Westeeen Road, Melbourne Australia</p>

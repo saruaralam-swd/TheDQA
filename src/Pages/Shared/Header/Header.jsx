@@ -7,6 +7,7 @@ import {
   XMarkIcon,
 } from "@heroicons/react/24/solid";
 import { GrLanguage } from "react-icons/gr";
+import HeaderMenu from "./HeaderMenu";
 
 const Header = () => {
   const [isActive, setActive] = useState("false");
@@ -83,19 +84,6 @@ const Header = () => {
               Contact Us
             </NavLink>
           </div>
-
-          <div>
-            <NavLink
-              to="blog"
-              className={({ isActive }) =>
-                isActive
-                  ? "hover:text-orange-500 text-orange-500 font-normal transition-all duration-300"
-                  : "hover:text-orange-500 font-normal transition-all duration-300"
-              }
-            >
-              Blog
-            </NavLink>
-          </div>
         </div>
 
         <div className="flex gap-4 items-center justify-center">
@@ -146,7 +134,7 @@ const Header = () => {
           }  md:translate-x-0  transition duration-200 ease-in-out`}
         >
           <div>
-            {/* Branding & Profile Info */}
+            {/* 1 */}
             <div>
               <h2 className="text-3xl cursor-pointer font-semibold text-center text-gray-800 flex items-center justify-between">
                 <Link onClick={handleToggle} to="/">
@@ -158,6 +146,12 @@ const Header = () => {
                   className="w-8 h-8 hover:bg-gray-300"
                 />
               </h2>
+            </div>
+            {/* 2 */}
+            <div className="flex flex-col justify-between flex-1 mt-6">
+              <nav>
+                <HeaderMenu />
+              </nav>
             </div>
           </div>
 

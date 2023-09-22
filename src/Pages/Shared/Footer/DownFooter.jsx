@@ -15,9 +15,9 @@ const DownFooter = () => {
         <div className="col-span-2 mb-10 md:mb-0">
           <h2 className="text-3xl font-semibold">Thief</h2>
           <p className="text-[15px] leading-7 my-3 md:my-5">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
-            dolores voluptatibus nesciunt? Ipsum tenetur impedit explicabo
-            voluptatem alias excepturi magni.
+            Unlock the true potential of your business with our BPO solutions -
+            where efficiency meets innovation, and your success becomes our
+            primary mission
           </p>
           <div className="flex gap-4">
             <span className="bg-gray-100 text-orange-500 hover:text-orange-700 px-2 py-1">
@@ -106,9 +106,8 @@ const DownFooter = () => {
         <div className="col-span-2">
           <h2 className="text-xl mb-3 md:mb-5 font-semibold">Newsletter</h2>
           <p className="text-[15px] leading-7 my-3 md:my-5">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur
-            doloremque tempora non ab officiis aspernatur rem facere ipsam? Sed,
-            nobis?
+            Stay connected for a world of insights, inspiration, and success.
+            Subscribe now and be part of our thriving community
           </p>
           <form className="flex">
             <input

@@ -16,54 +16,96 @@ import {
 import homeTestimonialImage from "../../assets/HomePage/HomeTestimonial.webp";
 
 const HomeTestimonial = () => {
-  const slides = [
+  const clientFeedback = [
     {
       _id: 1,
-      title: `Social Media Marking`,
-      text: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident numquam placeat impedit maxime, sit distinctio atque nobis tenetur suscipit debitis.",
-      image: userImage,
+      name: "John Smith",
+      position: "CEO",
+      feedback:
+        "Exceptional service! Our collaboration with Creative Solutions Co. has been a game-changer. Their team's dedication, expertise, and quick response",
+      profileImage: userImage,
       commentIcon: icon,
     },
     {
       _id: 2,
-      title: "Content Writing",
-      text: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident numquam placeat impedit maxime, sit distinctio atque nobis tenetur suscipit debitis.",
-      image: userImage,
+      name: "Alice Johnson",
+      position: "Founder",
+      feedback:
+        "Incredible support! GlobalTech Ventures exceeded our expectations. They've streamlined our operations and delivered outstanding results.",
+      profileImage: userImage,
       commentIcon: icon,
     },
     {
       _id: 3,
-      title: "Social Media Marking",
-      text: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident numquam placeat impedit maxime, sit distinctio atque nobis tenetur suscipit debitis.",
-      image: userImage,
+      name: "David Miller",
+      position: "CTO",
+      feedback:
+        "Impressive solutions! Precision Analytics Inc. stands out with their innovative approach. Their tech support team swiftly resolves issues, ensuring smooth operations.",
+      profileImage: userImage,
       commentIcon: icon,
     },
     {
       _id: 4,
-      title: "Social Media Marking",
-      text: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident numquam placeat impedit maxime, sit distinctio atque nobis tenetur suscipit debitis.",
-      image: userImage,
+      name: "Sarah Davis",
+      position: "COO",
+      feedback:
+        "Highly efficient! Quantum Services Ltd. has been a key partner in optimizing our processes. Their dedication and market research insights have been invaluable.",
+      profileImage: userImage,
       commentIcon: icon,
     },
     {
       _id: 5,
-      title: "Social Media Marking",
-      text: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident numquam placeat impedit maxime, sit distinctio atque nobis tenetur suscipit debitis.",
-      image: userImage,
+      name: "Michael Johnson",
+      position: "VP of Technology",
+      feedback:
+        "Game-changing collaboration! Nexus Innovations Group provides top-tier tech support and strategic guidance. Their solutions have given us a significant competitive edge",
+      profileImage: userImage,
       commentIcon: icon,
     },
     {
       _id: 6,
-      title: "Social Media Marking",
-      text: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident numquam placeat impedit maxime, sit distinctio atque nobis tenetur suscipit debitis.",
-      image: userImage,
+      name: "Emily White",
+      position: "Product Manager",
+      feedback:
+        "Continual excellence! Stellar Solutions Corp. offers invaluable support, from market insights to efficient task management. An indispensable partner !",
+      profileImage: userImage,
       commentIcon: icon,
     },
     {
       _id: 7,
-      title: "Social Media Marking",
-      text: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident numquam placeat impedit maxime, sit distinctio atque nobis tenetur suscipit debitis.",
-      image: userImage,
+      name: "James Brown",
+      position: "CFO",
+      feedback:
+        "Efficient and reliable! ProData Systems streamlined our financial records, allowing us to focus on strategic initiatives. A pleasure to work with!",
+      profileImage: userImage,
+      commentIcon: icon,
+    },
+    {
+      _id: 8,
+      name: "Sophia Clark",
+      position: "Marketing Director",
+      feedback:
+        "Significant impact! Visionary Enterprises has driven lead generation and conversion rates. Their expertise is evident, making them an invaluable part of our team!",
+      profileImage: userImage,
+      commentIcon: icon,
+    },
+
+    {
+      _id: 9,
+      name: "Daniel Turner",
+      position: "HR Manager",
+      feedback:
+        "Unparalleled support! InnovateX Technologies provides smooth operations with virtual assistants and tech support. Highly recommended for HR solutions!",
+      profileImage: userImage,
+      commentIcon: icon,
+    },
+    {
+      _id: 10,
+      name: "Olivia Martinez",
+      position: "Content Manager",
+      feedback:
+        "Reliable and innovative! InnovateX Technologies maintains a safe online environment with their content moderation services. Their dedication to quality !",
+      profileImage: userImage,
       commentIcon: icon,
     },
   ];
@@ -124,32 +166,32 @@ const HomeTestimonial = () => {
         modules={[Navigation, Keyboard, Autoplay]}
         className="mySwiper"
       >
-        {slides.map((slide) => (
+        {clientFeedback.map((client) => (
           <SwiperSlide
-            className="bg-white pl-5 pr-20 md:px-5 py-4 rounded-md"
-            key={slide._id}
+            className="bg-white border pl-5 pr-20 md:px-5 py-4 rounded-md"
+            key={client._id}
           >
             <div className="flex justify-between items-center">
               <div className="flex gap-4">
                 <div className="w-9">
                   <img
                     className="w-full rounded-full"
-                    src={slide.image}
+                    src={client.profileImage}
                     alt=""
                   />
                 </div>
                 <div>
-                  <h4 className="text-sm font-semibold">{slide.title}</h4>
-                  <p className="text-xs text-orange-500">Developer</p>
+                  <h4 className="text-sm font-semibold">{client.name}</h4>
+                  <p className="text-xs text-orange-500">{client.position}</p>
                 </div>
               </div>
 
               <div className="w-10">
-                <img className="w-full" src={slide.commentIcon} alt="" />
+                <img className="w-full" src={client.commentIcon} alt="" />
               </div>
             </div>
 
-            <p className="my-4">{slide.text}</p>
+            <p className="my-4">{client.feedback}</p>
             <StarIcon className="w-4 h-4 text-green-500 inline-block" />
             <StarIcon className="w-4 h-4 text-green-500 inline-block" />
             <StarIcon className="w-4 h-4 text-green-500 inline-block" />

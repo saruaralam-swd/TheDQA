@@ -9,29 +9,29 @@ import { useLocation } from "react-router-dom";
 const HomeWhoChoseUs = () => {
   const location = useLocation();
 
-  const slides = [
+  const ServiceArray = [
     {
       _id: 1,
       title: "Top Customer Services",
-      des: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, placeat.",
+      des: "We prioritize delivering an exceptional customer experience. Our dedicated customer support team is available around the clock to address your concerns and ensure your satisfaction. Your needs are our top priority, and we go the extra mile to exceed your expectations",
       icon: talkIcon,
     },
     {
       _id: 2,
       title: "Highly Personalized",
-      des: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, placeat.",
+      des: "We understand that every client is unique, and one-size-fits-all solutions don't work. Our approach is highly personalized to tailor our services to your specific needs. We take the time to understand your goals and challenges, crafting solutions that align perfectly with your vision",
       icon: DocumentIcon,
     },
     {
       _id: 3,
       title: "Passionate Talent",
-      des: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, placeat.",
+      des: "Our team is fueled by passion and driven to excel. We don't just provide services; we bring a genuine enthusiasm for what we do. This passion translates into innovative solutions, attention to detail, and a relentless pursuit of excellence in every project we undertake",
       icon: ClockIcon,
     },
     {
       _id: 4,
       title: "Quick Response Team",
-      des: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, placeat.",
+      des: "Time is of the essence in today's fast-paced business environment. That's why we've assembled a quick response team that's always ready to spring into action. Whether you have urgent queries or require immediate assistance, our rapid response team ensures that you never face delays in getting the support you need",
       icon: ClockIcon,
     },
   ];
@@ -49,7 +49,7 @@ const HomeWhoChoseUs = () => {
       </h6>
       <h6>
         <h2 className="text-3xl font-semibold mb-5 text-center">
-          Why You will Give Us Priority
+          Why You Will Give Us Priority
         </h2>
       </h6>
 
@@ -66,14 +66,14 @@ const HomeWhoChoseUs = () => {
                 : "md:grid grid-cols-2 gap-4"
             }
           >
-            {slides.map((slide) => (
-              <div key={slide._id} className="p-5 bg-gray-100 my-4 md:my-0">
+            {ServiceArray.map((service) => (
+              <div key={service._id} className="p-5 bg-gray-100 my-4 md:my-0">
                 <div>
                   <div className="flex justify-between">
-                    <h4 className="text-xl font-semibold">{slide.title}</h4>
-                    <img className="" src={slide.icon} alt="" />
+                    <h4 className="text-xl font-semibold">{service.title}</h4>
+                    <img className="" src={service.icon} alt="" />
                   </div>
-                  <p className="text-sm">{slide.des}</p>
+                  <p className="text-sm">{service.des}</p>
                 </div>
               </div>
             ))}
