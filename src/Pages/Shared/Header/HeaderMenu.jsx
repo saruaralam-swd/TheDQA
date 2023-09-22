@@ -1,34 +1,67 @@
 import React from "react";
-import { FingerPrintIcon, UserPlusIcon } from "@heroicons/react/24/solid";
 import { NavLink } from "react-router-dom";
 
-const HeaderMenu = () => {
+const HeaderMenu = ({ handleToggle }) => {
   return (
     <>
       <NavLink
-        to="my-bookings"
+        onClick={handleToggle}
+        to="home"
         className={({ isActive }) =>
           `flex items-center px-4 py-2 mt-5  transition-colors duration-300 transform  hover:bg-gray-300   hover:text-gray-700 ${
-            isActive ? "bg-gray-300  text-gray-700" : "text-gray-600"
+            isActive ? "bg-gray-300  text-orange-500" : "text-gray-600"
           }`
         }
       >
-        <FingerPrintIcon className="w-5 h-5" />
-
-        <span className="mx-4 font-medium">My Bookings</span>
+        <span className="mx-4 font-medium">Home</span>
       </NavLink>
 
       <NavLink
-        to="become-host"
+        onClick={handleToggle}
+        to="services"
         className={({ isActive }) =>
           `flex items-center px-4 py-2 mt-5  transition-colors duration-300 transform  hover:bg-gray-300   hover:text-gray-700 ${
-            isActive ? "bg-gray-300  text-gray-700" : "text-gray-600"
+            isActive ? "bg-gray-300  text-orange-500" : "text-gray-600"
           }`
         }
       >
-        <UserPlusIcon className="w-5 h-5" />
+        <span className="mx-4 font-medium">Services</span>
+      </NavLink>
 
-        <span className="mx-4 font-medium">Become A Host</span>
+      <NavLink
+        onClick={handleToggle}
+        to="aboutUs"
+        className={({ isActive }) =>
+          `flex items-center px-4 py-2 mt-5  transition-colors duration-300 transform  hover:bg-gray-300   hover:text-gray-700 ${
+            isActive ? "bg-gray-300  text-orange-500" : "text-gray-600"
+          }`
+        }
+      >
+        <span className="mx-4 font-medium">About Us</span>
+      </NavLink>
+
+      <NavLink
+        onClick={handleToggle}
+        to="contactUs"
+        className={({ isActive }) =>
+          `flex items-center px-4 py-2 mt-5  transition-colors duration-300 transform  hover:bg-gray-300   hover:text-gray-700 ${
+            isActive ? "bg-gray-300  text-orange-500" : "text-gray-600"
+          }`
+        }
+      >
+        <span className="mx-4 font-medium">Contact Us</span>
+      </NavLink>
+
+      <NavLink
+        onClick={handleToggle}
+        to="blog"
+        className={({ isActive }) =>
+          `flex items-center px-4 py-2 mt-5  transition-colors duration-300 transform  hover:bg-gray-300   hover:text-gray-700 ${
+            isActive ? "bg-gray-300  text-orange-500" : "text-gray-600"
+          }`
+        }
+      >
+        <span className="mx-4 font-medium">Blog</span>
       </NavLink>
     </>
   );
