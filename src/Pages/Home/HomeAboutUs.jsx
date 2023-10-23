@@ -15,11 +15,14 @@ const HomeAboutUs = () => {
               Our Business is Your life <br /> Making Easier & Comfortable
             </h2>
             <p className="my-3">
-              At Thief, we are a forward-thinking technology agency dedicated to
-              delivering cutting-edge solutions. With a team of experienced
-              professionals, we specialize in web and app development, IT
-              consulting, and more. Our mission is to empower businesses with
-              innovative technology, ensuring their success in the digital age
+              At TheDQA.com, we are a dynamic BPO company in the startup
+              ecosystem; as your strategic partner, our mission is to empower
+              startups with top-notch Software Development and Software Quality
+              Assurance services while allowing you to focus on what you do best
+              to build your vision. With our motto “Think, Design & Build” and
+              our slogan “You Success, Our Support,” we are dedicated to
+              empowering startups and software projects, ensuring their success
+              and growth.
             </p>
             <div className="mb-3">
               <p className="font-semibold">
