@@ -11,7 +11,7 @@ const HomeAboutUs = () => {
             <h6 className="font-xs text-green-500 mb-3 font-semibold">
               About Us
             </h6>
-            <h2 className="text-3xl font-semibold">
+            <h2 className="text-2xl md:text-3xl font-semibold">
               Our Business is Your life <br /> Making Easier & Comfortable
             </h2>
             <p className="my-3">

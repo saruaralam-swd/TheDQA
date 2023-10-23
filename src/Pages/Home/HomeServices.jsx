@@ -83,7 +83,7 @@ const HomeServices = () => {
         </button>
       </div>
 
-      <h2 className="text-3xl font-semibold mb-5">
+      <h2 className="text-2xl md:text-3xl font-semibold mb-5">
         We Provide Best <br /> Business Process <br />
         Outsourcing (BPO) <br /> Services
       </h2>

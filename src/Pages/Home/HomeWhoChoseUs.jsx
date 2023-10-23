@@ -12,26 +12,32 @@ const HomeWhoChoseUs = () => {
   const ServiceArray = [
     {
       _id: 1,
-      title: "Top Customer Services",
-      des: "We prioritize delivering an exceptional customer experience. Our dedicated customer support team is available around the clock to address your concerns and ensure your satisfaction. Your needs are our top priority, and we go the extra mile to exceed your expectations",
+      title: "Startup-Focused Expertise",
+      des: "Our team has a deep understanding of the challenges and opportunities startups face.",
       icon: talkIcon,
     },
     {
       _id: 2,
-      title: "Highly Personalized",
-      des: "We understand that every client is unique, and one-size-fits-all solutions don't work. Our approach is highly personalized to tailor our services to your specific needs. We take the time to understand your goals and challenges, crafting solutions that align perfectly with your vision",
+      title: "Client-Centric Approach",
+      des: "We prioritize your startup’s goals, leveraging our expertise to help you succeed.",
       icon: DocumentIcon,
     },
     {
       _id: 3,
-      title: "Passionate Talent",
-      des: "Our team is fueled by passion and driven to excel. We don't just provide services; we bring a genuine enthusiasm for what we do. This passion translates into innovative solutions, attention to detail, and a relentless pursuit of excellence in every project we undertake",
+      title: "Innovation-Driven",
+      des: "We stay at the forefront of technology trends to keep your startup competitive.",
       icon: ClockIcon,
     },
     {
       _id: 4,
-      title: "Quick Response Team",
-      des: "Time is of the essence in today's fast-paced business environment. That's why we've assembled a quick response team that's always ready to spring into action. Whether you have urgent queries or require immediate assistance, our rapid response team ensures that you never face delays in getting the support you need",
+      title: "Quality Assurance",
+      des: "We ensure your software is reliable, secure, and high-performing",
+      icon: ClockIcon,
+    },
+    {
+      _id: 5,
+      title: "Transparent Communication",
+      des: "We maintain open lines of communication, keeping you informed throughout the development and SQA processes.",
       icon: ClockIcon,
     },
   ];
@@ -48,8 +54,8 @@ const HomeWhoChoseUs = () => {
         Who ChoseUs
       </h6>
       <h6>
-        <h2 className="text-3xl font-semibold mb-5 text-center">
-          Why You Will Give Us Priority
+        <h2 className="text-2xl md:text-3xl font-semibold mb-5 text-center">
+          Why Choose TheDQA for Your Startup?
         </h2>
       </h6>
 
