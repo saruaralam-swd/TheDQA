@@ -14,12 +14,14 @@ const Header = () => {
 
   return (
     <>
-      <TopHeader />
+      <div className="hidden md:block">
+        <TopHeader />
+      </div>
 
       {/* Desktop Navbar */}
       <section className="hidden md:flex justify-between  px-8 py-5 ">
         <nav className="text-3xl font-bold text-[#32cd32]">
-          <Link to="home">Theif</Link>
+          <Link to="home">TheDQA</Link>
         </nav>
 
         <div className="flex items-center justify-center gap-4">
@@ -86,10 +88,10 @@ const Header = () => {
                   : "hover:text-orange-500 flex items-center gap-2 font-normal transition-all duration-300 "
               }
             >
-              <span>
+              {/* <span>
                 <GrLanguage className="w-4 h-4 inline-block" />
               </span>
-              <span>Blog</span>
+              <span>Blog</span> */}
             </NavLink>
           </div>
           <button className="px-4 py-2 bg-orange-500 text-white rounded-md">

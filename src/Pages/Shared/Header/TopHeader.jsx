@@ -9,11 +9,11 @@ const TopHeader = () => {
       <div className="flex gap-5 items-center justify-center">
         <p>
           <PhoneIcon className="h-4 w-4 text-orange-500 inline-block" />{" "}
-          +8124512
+          +8801719251254
         </p>
         <p>
           <EnvelopeIcon className="h-4 w-4 text-orange-500 inline-block" />{" "}
-          info@Thief.com
+          info@thedqa.com
         </p>
       </div>
 

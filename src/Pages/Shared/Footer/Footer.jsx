@@ -1,8 +1,8 @@
 import React from "react";
 import TopFooter from "./TopFooter";
-import DownFooter from "./DownFooter";
 import { useLocation } from "react-router-dom";
 import TopFooter2 from "./TopFooter2";
+import MainFooter from "./MainFooter";
 
 const Footer = () => {
   const location = useLocation();
@@ -16,7 +16,7 @@ const Footer = () => {
       {location?.pathname === "/contactUs" && <TopFooter2 />}
       {location?.pathname === "/blog" && <TopFooter2 />}
 
-      <DownFooter />
+      <MainFooter />
     </footer>
   );
 };

@@ -13,7 +13,7 @@ const TopFooter = () => {
                 <PhoneIcon className="w-5 h-5" />
               </p>
               <div>
-                <p className="font-medium">+8951452142</p>
+                <p className="font-medium">+8801719251254</p>
                 <p className="text-xs">Give us a call</p>
               </div>
             </div>
@@ -29,7 +29,7 @@ const TopFooter = () => {
                 <EnvelopeIcon className="w-5 h-5" />
               </p>
               <div>
-                <p className="font-medium">info@Theif.com</p>
+                <p className="font-medium">info@thedqa.com</p>
                 <p className="text-xs">Drop a line</p>
               </div>
             </div>
@@ -45,8 +45,8 @@ const TopFooter = () => {
                 <SiGooglemaps className="w-5 h-5" />
               </p>
               <div>
-                <p className="font-medium">58 ut Sunset road East Block</p>
-                <p className="text-xs">location</p>
+                <p className="font-medium">Sherpur, Bogura-5840</p>
+                <p className="text-xs">Bangladesh</p>
               </div>
             </div>
 

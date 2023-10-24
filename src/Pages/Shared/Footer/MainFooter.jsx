@@ -8,16 +8,15 @@ import {
 } from "react-icons/fa";
 import { IoIosSend } from "react-icons/io";
 
-const DownFooter = () => {
+const MainFooter = () => {
   return (
     <>
       <div className="grid md:grid-cols-6 gap-5">
         <div className="col-span-2 mb-10 md:mb-0">
           <h2 className="text-3xl font-semibold">Thief</h2>
           <p className="text-[15px] leading-7 my-3 md:my-5">
-            Unlock the true potential of your business with our BPO solutions -
-            where efficiency meets innovation, and your success becomes our
-            primary mission
+            We are excited to be your fellow traveler on the startup path,
+            offering support, innovation, and dedication to your success.
           </p>
           <div className="flex gap-4">
             <span className="bg-gray-100 text-orange-500 hover:text-orange-700 px-2 py-1">
@@ -125,11 +124,11 @@ const DownFooter = () => {
       </div>
       <hr className="w-full mt-3" />
       <p className="text-center mt-4">
-        Copyright @2023 Thief. All Rights Reserved by{" "}
+        Copyright © 2023 thedqa.com - All Rights Reserved.
         <span className="text-orange-500">Thief</span>
       </p>
     </>
   );
 };
 
-export default DownFooter;
+export default MainFooter;
