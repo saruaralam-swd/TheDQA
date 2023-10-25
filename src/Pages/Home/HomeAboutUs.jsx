@@ -4,8 +4,8 @@ import aboutUsImg from "../../assets/HomePage/HomeAboutUs.webp";
 
 const HomeAboutUs = () => {
   return (
-    <>
-      <section className="md:flex min-h-[500px] p-5 md:p-10 my-12">
+    <section>
+      <div className="md:flex min-h-[500px] p-5 md:p-10 my-12">
         <div className="md:w-1/2 order-2 flex items-center">
           <div>
             <h6 className="font-xs text-green-500 mb-3 font-semibold">
@@ -55,8 +55,8 @@ const HomeAboutUs = () => {
             <img src={aboutUsImg} className="lg:w-4/5" alt="" />
           </div>
         </div>
-      </section>
-    </>
+      </div>
+    </section>
   );
 };
 
