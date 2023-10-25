@@ -4,6 +4,7 @@ import HomeServices from "../Home/HomeServices";
 import Projects from "./Projects";
 import OurMission from "./OurMission";
 import Motto from "./Motto";
+import Slogan from "./Slogan";
 
 const AboutUs = () => {
   return (
@@ -14,6 +15,7 @@ const AboutUs = () => {
       <HomeAboutUs />
       <OurMission />
       <Motto />
+      <Slogan />
       <HomeServices />
       <Projects />
     </>
