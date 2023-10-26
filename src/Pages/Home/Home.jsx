@@ -14,9 +14,9 @@ const Home = () => {
       <HomeAboutUs />
       <HomeServices />
       <HomeWhoChoseUs />
-      <HomeHowItWork />
+      {/* <HomeHowItWork /> */}
       <HomeTestimonial />
-      <HomeNewsUpdate />
+      {/* <HomeNewsUpdate /> */}
     </>
   );
 };
