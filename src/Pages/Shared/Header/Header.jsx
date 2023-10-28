@@ -4,6 +4,7 @@ import { Link, NavLink } from "react-router-dom";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
 import { GrLanguage } from "react-icons/gr";
 import HeaderMenu from "./HeaderMenu";
+import darkModeLogo from "../../../assets/Logo/DarkModeLogo.jpg";
 
 const Header = () => {
   const [isActive, setActive] = useState("false");
@@ -17,11 +18,14 @@ const Header = () => {
       <div className="hidden md:block">
         <TopHeader />
       </div>
+      <hr />
 
       {/* Desktop Navbar */}
-      <section className="hidden md:flex justify-between  px-8 py-5 ">
-        <nav className="text-3xl font-bold text-[#32cd32]">
-          <Link to="home">TheDQA</Link>
+      <section className="hidden md:flex justify-between  px-8 py-5 bg-[#121316] text-white">
+        <nav className="w-[100px]">
+          <Link to="home">
+            <img className="w-full" src={darkModeLogo} alt="dark mode logo" />
+          </Link>
         </nav>
 
         <div className="flex items-center justify-center gap-4">

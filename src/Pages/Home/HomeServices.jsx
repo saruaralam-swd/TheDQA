@@ -6,6 +6,10 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 import "./SlideCss/HomeServices.css";
 import x from "../../assets/HomePage/HomeServicesBg.webp";
+import { Link } from "react-router-dom";
+import webApplication from "../../assets/Services/app-development.svg";
+import mobileApplication from "../../assets/Services/monitor-mobbile.svg";
+import qualityAssurance from "../../assets/Services/Quality-Assurance.svg";
 
 const HomeServices = () => {
   const servicesArray = [
@@ -71,20 +75,68 @@ const HomeServices = () => {
     },
   ];
 
+  const OurServices = [
+    {
+      _id: 1,
+      icon: mobileApplication,
+      title: "Web applications",
+      des: "Create stunning, fast, and secure web apps tailored to attract & retain your clients and generate new revenue streams with a consistent UI on all platforms",
+      target: "",
+    },
+    {
+      _id: 2,
+      icon: webApplication,
+      title: "Mobile App development",
+      des: "State-of-the-art, AI-enabled, robust, and smart software solutions at your disposal where the latest technologies are leveraged for unprecedented organization growth",
+      target: "",
+    },
+    {
+      _id: 3,
+      icon: qualityAssurance,
+      title: "Quality assurance",
+      des: "Our QA engineering team makes your product bug-free, bulletproof and performance-driven throughout both automatic and manual testing.",
+      target: "",
+    },
+  ];
+
   return (
-    <section className="min-h-[500px] p-5 md:p-10 my-12 border bg-no-repeat bg-cover bg-left-top">
+    <section className="min-h-[500px] p-5 md:p-10 my-12 border bg-no-repeat bg-cover bg-left-top bg-[#121316] text-white">
       <div className="text-center">
-        <h6 className="font-xs text-green-500 mb-3 font-semibold">
+        <h6 className="font-xs text-[#00FF9F] my-3 font-semibold">
           Our Services
         </h6>
-        <h2 className="text-2xl md:text-3xl font-semibold mb-5">
+        <h2 className="text-2xl md:text-3xl font-semibold">
           We Provide Best Business Process Outsourcing (BPO) Services
         </h2>
-        <p>
-          Planning and designing your tech solution is just the beginning. With
-          our full-scale design and development services, we stay by your side
-          till you reach your digital goals and beyond
+        <p className="text-sm text-[#8d8f98] mt-5 mb-10">
+          Planning and designing your tech solution is just the beginning.{" "}
+          <br /> With our full-scale design and development services, we stay by
+          your side till you reach your digital goals and beyond
         </p>
+      </div>
+
+      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5 mt-5">
+        {OurServices.map((service) => (
+          <div className="bg-[#1b1c20] hover:bg-[#202124] transition-bg duration-500 rounded-2xl p-7 hover:text-[#00FF9F] flex flex-col justify-between min-h-[280px]">
+            <img
+              className="w-[50px] h-[50px] mb-5"
+              src={service.icon}
+              alt={`${service.title} icon`}
+            />
+            <Link className="text-xl font-semibold inline-block mb-5">
+              {service.title}
+            </Link>
+            <p className="text-sm text-[#8d8f98] h-[100px]">
+              {service.des.length > 2000
+                ? service.des.slice(0, 3000)
+                : service.des}
+            </p>
+            <Link className="inline-block text-sm">
+              View {service?.title}
+              <span> > </span>
+            </Link>
+          </div>
+        ))}
       </div>
     </section>
   );
