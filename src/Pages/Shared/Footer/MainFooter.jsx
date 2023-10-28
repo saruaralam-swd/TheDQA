@@ -13,7 +13,7 @@ const MainFooter = () => {
     <>
       <div className="grid md:grid-cols-6 gap-5">
         <div className="col-span-2 mb-10 md:mb-0">
-          <h2 className="text-3xl font-semibold">Thief</h2>
+          <h2 className="text-3xl font-semibold">Thedqa.com</h2>
           <p className="text-[15px] leading-7 my-3 md:my-5">
             We are excited to be your fellow traveler on the startup path,
             offering support, innovation, and dedication to your success.
@@ -35,7 +35,7 @@ const MainFooter = () => {
         </div>
 
         <div className="mb-10 md:mb-0">
-          <h2 className="text-xl mb-3 md:mb-5 font-semibold">UseFul Links</h2>
+          <h4 className="text-xl mb-3 md:mb-5 font-semibold">UseFul Links</h4>
           <nav>
             <p className="mb-2">
               <Link
@@ -73,7 +73,7 @@ const MainFooter = () => {
         </div>
 
         <div className="mb-10 md:mb-0">
-          <h2 className="text-xl mb-3 md:mb-5 font-semibold">Quick Links</h2>
+          <h4 className="text-xl mb-3 md:mb-5 font-semibold">Quick Links</h4>
           <nav>
             <p className="mb-2">
               <Link
@@ -103,7 +103,7 @@ const MainFooter = () => {
         </div>
 
         <div className="col-span-2">
-          <h2 className="text-xl mb-3 md:mb-5 font-semibold">Newsletter</h2>
+          <h4 className="text-xl mb-3 md:mb-5 font-semibold">Newsletter</h4>
           <p className="text-[15px] leading-7 my-3 md:my-5">
             Stay connected for a world of insights, inspiration, and success.
             Subscribe now and be part of our thriving community
@@ -125,7 +125,6 @@ const MainFooter = () => {
       <hr className="w-full mt-3" />
       <p className="text-center mt-4">
         Copyright © 2023 thedqa.com - All Rights Reserved.
-        <span className="text-orange-500">Thief</span>
       </p>
     </>
   );
