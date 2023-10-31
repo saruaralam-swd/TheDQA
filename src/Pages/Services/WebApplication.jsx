@@ -5,11 +5,11 @@ import AllServices from "../../Components/AllServices";
 
 const WebApplication = () => {
   return (
-    <section className="bg-[#121316] text-white px-8 py-5">
+    <section className="bg-[#121316] text-white pl-4 pt-5">
       <div className="md:flex">
         <div className="w-full md:w-1/2">
           <h6 className="font-xs text-green-500 mb-3 font-semibold">
-            Static/Dynamic Website Development
+            Software Development
           </h6>
           <h2 className="text-5xl my-5">
             Make your web app

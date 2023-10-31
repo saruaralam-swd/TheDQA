@@ -9,7 +9,7 @@ const SQA = () => {
       <div className="md:flex">
         <div className="w-full md:w-1/2">
           <h6 className="font-xs text-green-500 mb-3 font-semibold">
-            Software Quality Assurance (SQA)
+            Software Quality Assurance
           </h6>
           <h2 className="text-5xl my-5">
             Let passionate testers <br /> ensure

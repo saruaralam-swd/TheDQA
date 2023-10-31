@@ -14,10 +14,9 @@ const Header = () => {
 
   return (
     <>
-      <div className="hidden md:block">
+      <div className="hidden md:block border-b border-b-gray-700">
         <TopHeader />
       </div>
-      <hr />
 
       {/* Desktop Navbar */}
       <section className="hidden md:flex justify-between  px-8 py-5 bg-[#121316] text-white">

@@ -10,9 +10,9 @@ import OurValues from "./OurValues";
 const AboutUs = () => {
   return (
     <>
-      <section className="h-[300px] bg-gray-100 flex items-center justify-center">
+      {/* <section className="h-[300px] bg-gray-100 flex items-center justify-center">
         <h2 className="text-5xl font-semibold">About Us</h2>
-      </section>
+      </section> */}
 
       <HomeAboutUs />
       <OurMission />

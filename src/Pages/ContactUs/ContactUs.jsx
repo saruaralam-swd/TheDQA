@@ -10,9 +10,9 @@ const ContactUs = () => {
 
   return (
     <>
-      <section className="h-[300px] bg-gray-100 flex items-center justify-center">
+      {/* <section className="h-[300px] bg-gray-100 flex items-center justify-center">
         <h2 className="text-5xl font-semibold">Contact Us</h2>
-      </section>
+      </section> */}
 
       <div className="md:grid grid-cols-3 space-y-3 md:space-y-0 gap-4 my-12 p-5 md:p-10">
         <div className="px-8 py-4 border rounded-md text-center space-y-2">

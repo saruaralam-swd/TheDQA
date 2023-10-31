@@ -51,8 +51,9 @@ const HomeServices = () => {
         </h2>
         <p className="text-sm text-[#8d8f98] mt-5 mb-10">
           Planning and designing your tech solution is just the beginning.{" "}
-          <br /> With our full-scale design and development services, we stay by
-          your side till you reach your digital goals and beyond
+          <br className="hidden md:block" /> With our full-scale design and
+          development services, we stay by your side till you reach your digital
+          goals and beyond
         </p>
       </div>
 
@@ -75,7 +76,12 @@ const HomeServices = () => {
                 ? service.des.slice(0, 3000)
                 : service.des}
             </p>
-            <Link className="inline-block text-sm">View {service?.title}</Link>
+            <Link
+              to={`/service/${service.target}`}
+              className="inline-block text-sm"
+            >
+              View {service?.title}
+            </Link>
           </div>
         ))}
       </div>
