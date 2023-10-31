@@ -73,7 +73,10 @@ const HomeWhoChoseUs = () => {
             }
           >
             {ServiceArray.map((service) => (
-              <div key={service._id} className="p-5 bg-gray-100 my-4 md:my-0">
+              <div
+                key={service._id}
+                className="p-5 bg-[#1b1c20] hover:bg-[#202124] text-white my-4 md:my-0"
+              >
                 <div>
                   <div className="flex justify-between">
                     <h4 className="text-xl font-semibold">{service.title}</h4>

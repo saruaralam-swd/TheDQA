@@ -168,7 +168,7 @@ const HomeTestimonial = () => {
       >
         {clientFeedback.map((client) => (
           <SwiperSlide
-            className="bg-white border pl-5 pr-20 md:px-5 py-4 rounded-md"
+            className="bg-[#1b1c20] hover:bg-[#202124] text-white border border-gray-700 pl-5 pr-20 md:px-5 py-4 rounded-md"
             key={client._id}
           >
             <div className="flex justify-between items-center">
