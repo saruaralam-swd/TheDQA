@@ -13,7 +13,7 @@ const HomeServices = () => {
     {
       _id: 1,
       icon: webApplication,
-      title: "Web Applications",
+      title: "Software Development",
       des: "Create stunning, fast, and secure web apps tailored to attract & retain your clients and generate new revenue streams with a consistent UI on all platforms",
       target: "webApp",
     },
@@ -27,7 +27,14 @@ const HomeServices = () => {
     {
       _id: 3,
       icon: qualityAssurance,
-      title: "Quality Assurance",
+      title: "Software Quality Assurance",
+      des: "Our QA engineering team makes your product bug-free, bulletproof and performance-driven throughout both automatic and manual testing.",
+      target: "sqa",
+    },
+    {
+      _id: 4,
+      icon: qualityAssurance,
+      title: "Startup BPO Support",
       des: "Our QA engineering team makes your product bug-free, bulletproof and performance-driven throughout both automatic and manual testing.",
       target: "sqa",
     },
