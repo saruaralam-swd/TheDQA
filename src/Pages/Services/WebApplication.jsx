@@ -34,10 +34,6 @@ const WebApplication = () => {
       </div>
 
       <div class="bg-white  text-black">
-        <h2 class="text-xl font-semibold mb-4">
-          Strategic Plan for Website Development
-        </h2>
-
         <div class="mb-4">
           <h3 class="text-lg font-semibold">1. Planning</h3>
           <ul class="list-disc pl-6">
