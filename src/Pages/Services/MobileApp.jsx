@@ -1,5 +1,7 @@
 import React from "react";
 import mobileApp from "../../assets/Services/web/AppDevelopment.svg";
+import { Link } from "react-router-dom";
+import AllServices from "../../Components/AllServices";
 
 const MobileApp = () => {
   return (
@@ -160,6 +162,7 @@ const MobileApp = () => {
           </div>
         </div>
       </div>
+      <AllServices />
     </section>
   );
 };

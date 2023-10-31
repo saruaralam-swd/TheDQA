@@ -1,5 +1,7 @@
 import React from "react";
 import webApplication from "../../assets/Services/web/WebApplications.svg";
+import { Link } from "react-router-dom";
+import AllServices from "../../Components/AllServices";
 
 const WebApplication = () => {
   return (
@@ -189,6 +191,8 @@ const WebApplication = () => {
           </ul>
         </div>
       </div>
+
+      <AllServices />
     </section>
   );
 };
