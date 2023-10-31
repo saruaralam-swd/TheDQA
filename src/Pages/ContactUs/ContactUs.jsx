@@ -14,20 +14,20 @@ const ContactUs = () => {
         <h2 className="text-5xl font-semibold">Contact Us</h2>
       </section> */}
 
-      <div className="md:grid grid-cols-3 space-y-3 md:space-y-0 gap-4 my-12 p-5 md:p-10">
-        <div className="px-8 py-4 border rounded-md text-center space-y-2">
+      <div className="md:grid grid-cols-3 space-y-3 md:space-y-0 gap-4 py-12 p-5 md:p-10 bg-[#191A1D] text-white">
+        <div className="px-8 py-4 border border-gray-700 rounded-md text-center space-y-2">
           <img src={phoneCall} className="inline-block" alt="" />
           <h4>Phone Number</h4>
           <p>+8256-569-887</p>
           <p>+8256-569-887</p>
         </div>
-        <div className="px-8 py-4 border rounded-md text-center space-y-2">
+        <div className="px-8 py-4 border border-gray-700 rounded-md text-center space-y-2">
           <img src={email} className="inline-block" alt="" />
           <h4>Email Address</h4>
           <p>Info@Thief.com</p>
           <p>Hello@Thief.com</p>
         </div>
-        <div className="px-8 py-4 border rounded-md text-center space-y-2">
+        <div className="px-8 py-4 border border-gray-700 rounded-md text-center space-y-2">
           <img src={locationIcon} className="inline-block" alt="" />
           <h4>Location</h4>
           <p>950 St Johns PI Brokely, NY, United State</p>
@@ -38,7 +38,7 @@ const ContactUs = () => {
       <div
         className={
           location.pathname === "/contactUs"
-            ? "min-h-[500px] md:flex gap-5 mt-12 mb-32 p-5 md:p-10"
+            ? "min-h-[500px] md:flex gap-5 pt-12 pb-32 p-5 md:p-10 bg-[#121316] text-white"
             : "min-h-[500px] md:flex gap-5 my-12 p-5 md:p-10"
         }
       >

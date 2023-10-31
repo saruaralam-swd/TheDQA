@@ -4,8 +4,8 @@ import { SiGooglemaps } from "react-icons/si";
 
 const TopFooter2 = () => {
   return (
-    <section className="md:grid grid-cols-3 gap-7 mt-[-200px] md:mt-[-120px] mb-[65px] bg-[#F5F4F4] rounded-lg p-8 md:p-10 border">
-      <div className="bg-white text-black p-5 overflow-hidden">
+    <section className="md:grid grid-cols-3 gap-7 mt-[-200px] md:mt-[-120px] mb-[65px] bg-[#202227]  rounded-lg p-8 md:p-10 border border-gray-700">
+      <div className="bg-[#1b1c20] rounded-md p-5 overflow-hidden">
         <div className="flex justify-between items-center">
           <div className="flex items-center gap-4">
             <p className="bg-orange-500 p-2 rounded-md">
@@ -21,7 +21,7 @@ const TopFooter2 = () => {
         </div>
       </div>
 
-      <div className="bg-white text-black p-5 overflow-hidden my-5 md:my-0">
+      <div className="bg-[#1b1c20] rounded-md p-5 overflow-hidden my-5 md:my-0">
         <div className="flex justify-between items-center gap-20">
           <div className="flex items-center gap-4">
             <p className="bg-orange-500 p-2 rounded-md">
@@ -37,7 +37,7 @@ const TopFooter2 = () => {
         </div>
       </div>
 
-      <div className="bg-white text-black p-5 overflow-hidden">
+      <div className="bg-[#1b1c20] rounded-md p-5 overflow-hidden">
         <div className="flex justify-between">
           <div className="flex items-center gap-4">
             <p className="bg-orange-500 p-2 rounded-md">
