@@ -23,7 +23,7 @@ const Header = () => {
       {/* Desktop Navbar */}
       <section className="hidden md:flex justify-between  px-8 py-5 bg-[#121316] text-white">
         <nav className="w-[100px]">
-          <Link to="home">
+          <Link to="">
             <img className="w-full" src={darkModeLogo} alt="dark mode logo" />
           </Link>
         </nav>

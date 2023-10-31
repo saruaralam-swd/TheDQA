@@ -18,7 +18,7 @@ const AboutUs = () => {
       <Motto />
       <Slogan />
       <OurValues />
-      <HomeServices />
+      {/* <HomeServices /> */}
       <Projects />
     </>
   );

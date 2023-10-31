@@ -51,7 +51,7 @@ const HomeWhoChoseUs = () => {
       }
     >
       <h6 className="font-xs text-green-500 mb-3 font-semibold text-center">
-        Who ChoseUs
+        Why Us
       </h6>
       <h6>
         <h2 className="text-2xl md:text-3xl font-semibold mb-5 text-center">

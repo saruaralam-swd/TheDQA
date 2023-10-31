@@ -6,6 +6,7 @@ import AboutUs from "../../Pages/AboutUs/AboutUs";
 import ContactUs from "../../Pages/ContactUs/ContactUs";
 import Services from "../../Pages/Services/Services";
 import Blog from "../../Pages/Blog/Blog";
+import WebApplication from "../../Pages/Services/WebApplication";
 
 export const router = createBrowserRouter([
   {
@@ -36,6 +37,10 @@ export const router = createBrowserRouter([
       {
         path: "/blog",
         element: <Blog />,
+      },
+      {
+        path: "/web-app",
+        element: <WebApplication />,
       },
     ],
   },
