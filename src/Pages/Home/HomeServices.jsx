@@ -15,18 +15,21 @@ const HomeServices = () => {
       icon: webApplication,
       title: "Web Applications",
       des: "Create stunning, fast, and secure web apps tailored to attract & retain your clients and generate new revenue streams with a consistent UI on all platforms",
+      target: "webApp",
     },
     {
       _id: 2,
       icon: mobileApplication,
       title: "Mobile App Development",
       des: "State-of-the-art, AI-enabled, robust, and smart software solutions at your disposal where the latest technologies are leveraged for unprecedented organization growth",
+      target: "mobileApp",
     },
     {
       _id: 3,
       icon: qualityAssurance,
       title: "Quality Assurance",
       des: "Our QA engineering team makes your product bug-free, bulletproof and performance-driven throughout both automatic and manual testing.",
+      target: "sqa",
     },
   ];
 
@@ -55,7 +58,7 @@ const HomeServices = () => {
               alt={`${service.title} icon`}
             />
             <Link
-              to="webApp"
+              to={`/service/${service.target}`}
               className="text-xl font-semibold inline-block mb-5"
             >
               {service.title}

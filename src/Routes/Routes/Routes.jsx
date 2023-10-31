@@ -7,6 +7,8 @@ import ContactUs from "../../Pages/ContactUs/ContactUs";
 import Services from "../../Pages/Services/Services";
 import Blog from "../../Pages/Blog/Blog";
 import WebApplication from "../../Pages/Services/WebApplication";
+import MobileApp from "../../Pages/Services/MobileApp";
+import SQA from "../../Pages/Services/SQA";
 
 export const router = createBrowserRouter([
   {
@@ -18,7 +20,10 @@ export const router = createBrowserRouter([
         path: "/",
         element: <Home />,
       },
-
+      {
+        path: "/home",
+        element: <Home />,
+      },
       {
         path: "/services",
         element: <Services />,
@@ -36,8 +41,16 @@ export const router = createBrowserRouter([
         element: <Blog />,
       },
       {
-        path: "/webApp",
+        path: "/service/webApp",
         element: <WebApplication />,
+      },
+      {
+        path: "/service/mobileApp",
+        element: <MobileApp />,
+      },
+      {
+        path: "/service/sqa",
+        element: <SQA />,
       },
     ],
   },
