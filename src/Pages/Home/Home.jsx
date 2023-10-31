@@ -6,6 +6,8 @@ import HomeTestimonial from "./HomeTestimonial";
 import HomeNewsUpdate from "./HomeNewsUpdate";
 import HomeHowItWork from "./HomeHowItWork";
 import HomeWhoChoseUs from "./HomeWhoChoseUs";
+import ContactUs from "../ContactUs/ContactUs";
+import ContactUsForm from "../../Components/ContactUsForm";
 
 const Home = () => {
   return (
@@ -17,6 +19,7 @@ const Home = () => {
       {/* <HomeHowItWork /> */}
       <HomeTestimonial />
       {/* <HomeNewsUpdate /> */}
+      <ContactUsForm />
     </>
   );
 };

@@ -1,5 +1,6 @@
 import React from "react";
 import img from "../../assets/HomePage/HomeWhoChoseUs.png";
+import img2 from "../../assets/HomePage/HomeWhoChoseUs2.png";
 import talkIcon from "../../assets/HomePage/customer-service.png";
 import DocumentIcon from "../../assets/HomePage/document.png";
 import ClockIcon from "../../assets/HomePage/clock.png";
@@ -78,9 +79,11 @@ const HomeWhoChoseUs = () => {
                 className="p-5 bg-[#1b1c20] text-white my-4 md:my-0"
               >
                 <div>
-                  <div className="flex justify-between">
-                    <h4 className="text-xl font-semibold">{service.title}</h4>
-                    <img className="" src={service.icon} alt="" />
+                  <div>
+                    <h4 className="text-xl font-semibold mb-3">
+                      {service.title}
+                    </h4>
+                    {/* <img className="" src={service.icon} alt="" /> */}
                   </div>
                   <p className="text-sm">{service.des}</p>
                 </div>

@@ -4,10 +4,11 @@ import { Link, NavLink } from "react-router-dom";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
 import HeaderMenu from "./HeaderMenu";
 import darkModeLogo from "../../../assets/Logo/DarkModeLogo.jpg";
-import "../../../Components/drop";
+import logo from "../../../assets/Logo/DarkModeLogo.jpg";
 
 const Header = () => {
   const [isActive, setActive] = useState("false");
+
   const handleToggle = () => {
     setActive(!isActive);
   };
@@ -19,7 +20,7 @@ const Header = () => {
       </div>
 
       {/* Desktop Navbar */}
-      <section className="hidden md:flex justify-between  px-8 py-5 bg-[#121316] text-white">
+      <section className="hidden md:flex justify-between  px-8 py-5 bg-[#000000] text-white">
         <nav className="w-[100px]">
           <Link to="">
             <img className="w-full" src={darkModeLogo} alt="dark mode logo" />
@@ -102,22 +103,20 @@ const Header = () => {
         </div>
       </section>
 
-      {/* sidebar Navbar */}
+      {/* sidebar Modal Navbar */}
       <section>
-        <div className="bg-gray-100 text-gray-800 flex justify-between md:hidden">
-          <div>
-            <div className="block cursor-pointer p-4 font-bold">
-              <Link to="/" className="text-green-500 font-semibold text-2xl">
-                TheDQA
-              </Link>
-            </div>
+        <div className="bg-[#000000] text-white flex justify-between items-center md:hidden">
+          <div className="w-[150px]">
+            <Link to="/">
+              <img src={logo} className="w-full" alt="" />
+            </Link>
           </div>
 
           <button
             onClick={handleToggle}
-            className="mobile-menu-button p-4 focus:outline-none hover:bg-gray-300 focus:bg-gray-300"
+            className="mobile-menu-button p-4 focus:outline-none hover:bg-white hover:text-black transition-bg duration-150"
           >
-            <Bars3Icon className="h-5 w-5" />
+            <Bars3Icon className="h-8 w-8" />
           </button>
         </div>
 

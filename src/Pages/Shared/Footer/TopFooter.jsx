@@ -13,7 +13,7 @@ const TopFooter = () => {
                 <PhoneIcon className="w-5 h-5" />
               </p>
               <div>
-                <p className="font-medium">+8801719251254</p>
+                <p className="font-medium">+8801797093279 / +8801719251254</p>
                 <p className="text-xs">Give us a call</p>
               </div>
             </div>
@@ -45,7 +45,10 @@ const TopFooter = () => {
                 <SiGooglemaps className="w-5 h-5" />
               </p>
               <div>
-                <p className="font-medium">Sherpur, Bogura-5840</p>
+                <p className="font-medium">
+                  Holding No: 1117-07, Professor Para (Noyapara 3 Matha),
+                  Sherpur, Bogura-5840
+                </p>
                 <p className="text-xs">Bangladesh</p>
               </div>
             </div>

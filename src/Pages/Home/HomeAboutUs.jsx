@@ -1,6 +1,7 @@
 import React from "react";
 import { ArrowLongRightIcon } from "@heroicons/react/24/solid";
 import aboutUsImg from "../../assets/HomePage/HomeAboutUs.webp";
+import { Link } from "react-router-dom";
 
 const HomeAboutUs = () => {
   return (
@@ -43,9 +44,12 @@ const HomeAboutUs = () => {
               </p>
             </div>
             <>
-              <button className="bg-orange-500 text-white font-semibold px-5 py-2 rounded-md">
+              <Link
+                to="aboutUs"
+                className="inline-block bg-orange-500 text-white font-semibold px-5 py-2 rounded-md"
+              >
                 More About Us
-              </button>
+              </Link>
             </>
           </div>
         </div>

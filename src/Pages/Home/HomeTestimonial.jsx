@@ -119,7 +119,7 @@ const HomeTestimonial = () => {
         <h6 className="font-xs text-green-500 mb-3 font-semibold">
           Testimonial
         </h6>
-        <div className="flex gap-3">
+        <div className="hidden md:flex gap-3">
           <span className="bg-gray-100 hover:bg-gray-200 p-3 rounded-sm">
             <ArrowLongLeftIcon className="w-5 h-5" />
           </span>
