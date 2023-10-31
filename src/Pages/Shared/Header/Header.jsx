@@ -108,7 +108,7 @@ const Header = () => {
           <div>
             <div className="block cursor-pointer p-4 font-bold">
               <Link to="/" className="text-green-500 font-semibold text-2xl">
-                Thief
+                TheDQA
               </Link>
             </div>
           </div>
@@ -135,7 +135,7 @@ const Header = () => {
                 className="text-3xl cursor-pointer font-semibold text-center text-gray-800 "
               >
                 {" "}
-                Thief
+                TheDQA
               </Link>
 
               <XMarkIcon

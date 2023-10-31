@@ -52,7 +52,7 @@ const HeaderMenu = ({ handleToggle }) => {
         <span className="mx-4 font-medium">Contact Us</span>
       </NavLink>
 
-      <NavLink
+      {/* <NavLink
         onClick={handleToggle}
         to="blog"
         className={({ isActive }) =>
@@ -62,7 +62,7 @@ const HeaderMenu = ({ handleToggle }) => {
         }
       >
         <span className="mx-4 font-medium">Blog</span>
-      </NavLink>
+      </NavLink> */}
     </>
   );
 };
