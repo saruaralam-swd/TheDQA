@@ -31,7 +31,7 @@ const Header = () => {
         <div className="flex items-center justify-center gap-4">
           <div>
             <NavLink
-              to="home"
+              to=""
               className={({ isActive }) =>
                 isActive
                   ? "hover:text-orange-500 text-orange-500 font-normal transition-all duration-300"

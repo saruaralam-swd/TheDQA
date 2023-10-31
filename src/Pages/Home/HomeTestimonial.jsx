@@ -112,8 +112,8 @@ const HomeTestimonial = () => {
 
   return (
     <section
-      className="md:min-h-[450px] p-5 md:p-10 my-12 bg-no-repeat bg-contain"
-      style={{ backgroundImage: `url(${homeTestimonialImage})` }}
+      className="md:min-h-[450px] p-5 md:p-10 py-12 bg-no-repeat bg-contain bg-[#191A1D]"
+      // style={{ backgroundImage: `url(${homeTestimonialImage})` }}
     >
       <div className="flex justify-between items-center">
         <h6 className="font-xs text-green-500 mb-3 font-semibold">
@@ -129,7 +129,7 @@ const HomeTestimonial = () => {
         </div>
       </div>
 
-      <h2 className="text-3xl font-semibold mb-5">
+      <h2 className="text-3xl font-semibold mb-5 text-white">
         What Client's Say About of Us
       </h2>
 

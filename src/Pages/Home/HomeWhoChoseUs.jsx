@@ -46,15 +46,15 @@ const HomeWhoChoseUs = () => {
     <section
       className={
         location.pathname === "/services"
-          ? "min-h-[500px] mt-12 mb-32  p-5 md:p-10"
-          : "min-h-[500px] my-12  p-5 md:p-10"
+          ? "min-h-[500px] bg-[#121316] p-5 md:p-10"
+          : "min-h-[500px] bg-[#121316] p-5 md:p-10"
       }
     >
       <h6 className="font-xs text-green-500 mb-3 font-semibold text-center">
         Why Us
       </h6>
       <h6>
-        <h2 className="text-2xl md:text-3xl font-semibold mb-5 text-center">
+        <h2 className="text-white text-2xl md:text-3xl font-semibold mb-5 text-center">
           Why Choose TheDQA for Your Startup?
         </h2>
       </h6>

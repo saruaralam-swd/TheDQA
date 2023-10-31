@@ -35,8 +35,8 @@ const Projects = () => {
     <section
       className={
         location.pathname === "/aboutUs"
-          ? "mt-12 mb-32 p-5 md:p-10"
-          : "my-12 p-5 md:p-10"
+          ? "bg-[#121316] text-white pt-12 pb-32 p-5 md:p-10"
+          : "bg-[#121316] text-white py-12 p-5 md:p-10"
       }
     >
       <h6 className="font-xs text-green-500 mb-3 font-semibold text-center">
@@ -56,7 +56,7 @@ const Projects = () => {
               className="w-full h-full object-cover rounded-t-lg"
               alt=""
             />
-            <h5 className="absolute w-4/5 left-11 md:left-[10%] bottom-[-27px] shadow-2xl text-center px-5 py-4 bg-white rounded-md">
+            <h5 className="absolute w-4/5 left-11 md:left-[10%] bottom-[-27px] shadow-2xl text-center px-5 py-4 bg-[#1b1c20] rounded-md">
               {pro.tag}
             </h5>
           </div>

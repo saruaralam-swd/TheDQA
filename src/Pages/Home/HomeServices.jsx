@@ -31,7 +31,7 @@ const HomeServices = () => {
   ];
 
   return (
-    <section className="min-h-[500px] p-5 md:p-10 my-12 border bg-no-repeat bg-cover bg-left-top bg-[#121316] text-white">
+    <section className="min-h-[500px] p-5 md:p-10 py-12 bg-no-repeat bg-cover bg-left-top bg-[#121316] text-white">
       <div className="text-center">
         <h6 className="font-xs text-[#00FF9F] my-3 font-semibold">
           Our Services
@@ -55,7 +55,7 @@ const HomeServices = () => {
               alt={`${service.title} icon`}
             />
             <Link
-              to="web-app"
+              to="webApp"
               className="text-xl font-semibold inline-block mb-5"
             >
               {service.title}

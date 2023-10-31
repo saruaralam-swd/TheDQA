@@ -3,7 +3,7 @@ import bannerImg from "../../assets/HomePage/HomeBanner.png";
 
 const HomeBanner = () => {
   return (
-    <section className="md:flex min-h-[500px] px-5 py-4 md:px-10 md:py-8 bg-[#F9F7F7]">
+    <section className="md:flex min-h-[500px] px-5 py-4 md:px-10 md:py-8 bg-[#191A1D] text-white">
       <div className="md:w-1/2 order-1 flex items-center">
         <div>
           <h1 className="text-3xl md:text-5xl font-semibold mb-5 space-y-3">
@@ -21,7 +21,7 @@ const HomeBanner = () => {
         </div>
       </div>
 
-      <div className="md:w-1/2 order-2 flex items-center">
+      <div className="md:w-1/2 mt-10 md:mt-0 order-2 flex items-center">
         <img src={bannerImg} alt="" />
       </div>
     </section>
