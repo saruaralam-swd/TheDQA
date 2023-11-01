@@ -115,19 +115,7 @@ const HomeTestimonial = () => {
       className="md:min-h-[450px] p-5 md:p-10 py-12 bg-no-repeat bg-contain bg-[#191A1D]"
       // style={{ backgroundImage: `url(${homeTestimonialImage})` }}
     >
-      <div className="flex justify-between items-center">
-        <h6 className="font-xs text-green-500 mb-3 font-semibold">
-          Testimonial
-        </h6>
-        <div className="hidden md:flex gap-3">
-          <span className="bg-gray-100 hover:bg-gray-200 p-3 rounded-sm">
-            <ArrowLongLeftIcon className="w-5 h-5" />
-          </span>
-          <span className="bg-gray-100 hover:bg-gray-200 p-3 rounded-sm">
-            <ArrowLongRightIcon className="w-5 h-5" />
-          </span>
-        </div>
-      </div>
+      <h6 className="font-xs text-[#00FF85] mb-3 font-semibold">Testimonial</h6>
 
       <h2 className="text-3xl font-semibold mb-5 text-white">
         What Client's Say About of Us

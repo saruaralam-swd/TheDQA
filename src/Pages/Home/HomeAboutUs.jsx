@@ -9,10 +9,10 @@ const HomeAboutUs = () => {
       <div className="md:flex min-h-[500px] p-5 md:p-10">
         <div className="md:w-1/2 order-2 flex items-center">
           <div>
-            <h6 className="font-xs text-green-500 mb-3 font-semibold">
+            <h6 className="font-xs text-[#00FF85] mb-3 font-semibold">
               About Us
             </h6>
-            <h2 className="text-2xl md:text-3xl font-semibold">
+            <h2 className="text-2xl  md:text-3xl mb-4 font-semibold">
               Our Business is Your life <br /> Making Easier & Comfortable
             </h2>
             <p className="my-3">

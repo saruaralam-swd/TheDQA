@@ -38,12 +38,19 @@ const HomeServices = () => {
       des: "Our QA engineering team makes your product bug-free, bulletproof and performance-driven throughout both automatic and manual testing.",
       target: "sqa",
     },
+    {
+      _id: 5,
+      icon: qualityAssurance,
+      title: "QA automation with cypress studio",
+      des: "Our QA engineering team makes your product bug-free, bulletproof and performance-driven throughout both automatic and manual testing.",
+      target: "sqa",
+    },
   ];
 
   return (
     <section className="min-h-[500px] p-5 md:p-10 py-12 bg-no-repeat bg-cover bg-left-top bg-[#121316] text-white">
-      <div className="text-center">
-        <h6 className="font-xs text-[#00FF9F] my-3 font-semibold">
+      <div>
+        <h6 className="font-xs text-[#00FF85] my-3 font-semibold">
           Our Services
         </h6>
         <h2 className="text-2xl md:text-3xl font-semibold">
@@ -66,7 +73,7 @@ const HomeServices = () => {
               alt={`${service.title} icon`}
             />
             <Link
-              to={`/service/${service.target}`}
+              to={`/service/${service?.target}`}
               className="text-xl font-semibold inline-block mb-5"
             >
               {service.title}
@@ -77,7 +84,7 @@ const HomeServices = () => {
                 : service.des}
             </p>
             <Link
-              to={`/service/${service.target}`}
+              to={`/service/${service?.target}`}
               className="inline-block text-sm"
             >
               View {service?.title}

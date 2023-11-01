@@ -1,7 +1,6 @@
 import React from "react";
 import TopFooter from "./TopFooter";
 import { useLocation } from "react-router-dom";
-import TopFooter2 from "./TopFooter2";
 import MainFooter from "./MainFooter";
 
 const Footer = () => {
