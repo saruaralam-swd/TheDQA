@@ -133,8 +133,7 @@ const Header = () => {
                 to="/"
                 className="text-3xl cursor-pointer font-semibold text-center text-gray-800 "
               >
-                {" "}
-                TheDQA
+                <img src={logo} className="w-[100px]" alt="" />
               </Link>
 
               <XMarkIcon
