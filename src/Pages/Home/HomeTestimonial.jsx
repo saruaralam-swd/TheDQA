@@ -7,13 +7,7 @@ import "swiper/css/navigation";
 import "./SlideCss/HomeServices.css";
 import userImage from "../../../src/assets/HomePage/user.jpg";
 import icon from "../../../src/assets/HomePage/icon.jpg";
-import {
-  ArrowLongLeftIcon,
-  ArrowLongRightIcon,
-  StarIcon,
-} from "@heroicons/react/24/solid";
-// import homeTestimonialImage from "../../assets/HomePage/HomeTestimonial-2.webp";
-import homeTestimonialImage from "../../assets/HomePage/HomeTestimonial.webp";
+import { StarIcon } from "@heroicons/react/24/solid";
 
 const HomeTestimonial = () => {
   const clientFeedback = [
@@ -111,10 +105,7 @@ const HomeTestimonial = () => {
   ];
 
   return (
-    <section
-      className="md:min-h-[450px] p-5 md:p-10 py-12 bg-no-repeat bg-contain bg-[#191A1D]"
-      // style={{ backgroundImage: `url(${homeTestimonialImage})` }}
-    >
+    <section className="md:min-h-[450px] p-5 md:p-10 py-12 bg-no-repeat bg-contain bg-[#191A1D]">
       <h6 className="font-xs text-[#00FF85] mb-3 font-semibold">Testimonial</h6>
 
       <h2 className="text-3xl font-semibold mb-5 text-white">
@@ -145,7 +136,6 @@ const HomeTestimonial = () => {
           delay: 3000,
           disableOnInteraction: false,
         }}
-        // navigation={true}
         freeMode={true}
         loop={true}
         keyboard={{
@@ -165,7 +155,7 @@ const HomeTestimonial = () => {
                   <img
                     className="w-full rounded-full"
                     src={client.profileImage}
-                    alt=""
+                    alt="client profile image"
                   />
                 </div>
                 <div>

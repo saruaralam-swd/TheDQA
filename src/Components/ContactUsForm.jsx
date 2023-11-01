@@ -1,14 +1,10 @@
 import React from "react";
-import contactBanner from "../assets/ContactUsPage/contact-banner.svg";
 
 const ContactUsForm = () => {
   return (
-    <div
-      className="min-h-[500px] md:flex gap-5 pt-12 p-5 md:p-10 text-white bg-no-repeat bg-cover"
-      style={{ backgroundImage: `url(${contactBanner})` }}
-    >
+    <div className="min-h-[500px] md:flex gap-5 pt-12 p-5 md:p-10 text-white bg-[#121316] bg-no-repeat bg-left">
       <div className="md:w-1/2 flex justify-center items-center">
-        <h2 className="text-3xl">
+        <h2 className="text-4xl mb-10 md:mb-0 font-semibold">
           We want to hear from you! <br />
           Connect With Us Today!
         </h2>
