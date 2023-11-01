@@ -1,6 +1,5 @@
 import React from "react";
 import QABanner from "../../assets/Services/web/QualityAssurance.svg";
-import { Link } from "react-router-dom";
 import AllServices from "../../Components/AllServices";
 
 const SQA = () => {

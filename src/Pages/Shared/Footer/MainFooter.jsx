@@ -39,32 +39,32 @@ const MainFooter = () => {
           <nav>
             <p className="mb-2">
               <Link
+                to=""
                 className="hover:text-orange-500 transition-all duration-300 text-[15px]"
-                href=""
               >
                 Home
               </Link>
             </p>
             <p className="mb-2">
               <Link
+                to="aboutUs"
                 className="hover:text-orange-500 transition-all duration-300 text-[15px]"
-                href=""
               >
                 About Us
               </Link>
             </p>
             <p className="mb-2">
               <Link
+                to=""
                 className="hover:text-orange-500 transition-all duration-300 text-[15px]"
-                href=""
               >
                 Privacy Policy
               </Link>
             </p>
             <p>
               <Link
+                to=""
                 className="hover:text-orange-500 transition-all duration-300 text-[15px]"
-                href=""
               >
                 Term $ condition
               </Link>
@@ -77,24 +77,24 @@ const MainFooter = () => {
           <nav>
             <p className="mb-2">
               <Link
+                to="blog"
                 className="hover:text-orange-500 transition-all duration-300 text-[15px]"
-                href=""
               >
                 Blog
               </Link>
             </p>
             <p className="mb-2">
               <Link
+                to="contactUs"
                 className="hover:text-orange-500 transition-all duration-300 text-[15px]"
-                href=""
               >
                 Contact Us
               </Link>
             </p>
             <p className="mb-2">
               <Link
+                to="services"
                 className="hover:text-orange-500 transition-all duration-300 text-[15px]"
-                href=""
               >
                 Services
               </Link>
