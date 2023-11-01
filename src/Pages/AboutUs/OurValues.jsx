@@ -30,7 +30,7 @@ const OurValues = () => {
   ];
 
   return (
-    <section className="bg-[#121316] text-white border-2 border-green-500 my-10 p-5">
+    <section className="bg-[#121316] text-white py-20 p-5">
       <h6 className="font-xs text-green-500 mb-3 font-semibold text-center">
         Our Values
       </h6>
