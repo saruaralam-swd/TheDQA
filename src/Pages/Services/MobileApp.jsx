@@ -106,15 +106,8 @@ const MobileApp = () => {
               key={service?._id}
               className="border border-gray-800 rounded-md p-5"
             >
-              <h3 class="text-xl font-semibold mb-4">
-                Define Objectives and Features
-              </h3>
-              <p className="text-sm text-gray-400">
-                Clearly define the objectives of the mobile app and list the
-                features that you want to include. Consider which aspects of the
-                website should be accessible through the app and which features
-                will enhance the mobile user experience.
-              </p>
+              <h3 class="text-xl font-semibold mb-4">{service.title}</h3>
+              <p className="text-sm text-gray-400">{service.des}</p>
             </div>
           ))}
         </div>

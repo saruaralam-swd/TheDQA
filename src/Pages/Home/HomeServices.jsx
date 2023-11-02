@@ -42,7 +42,7 @@ const HomeServices = () => {
       _id: 5,
       icon: qualityAssurance,
       title: "QA automation with cypress studio",
-      des: "At TheDQA, we offer comprehensive QA Automation services using Cypress Studio, a powerful and versatile tool that enhances the efficiency and effectiveness of your software testing processes. Our team of experienced QA engineers is well-versed in leveraging Cypress Studio to deliver high-quality testing solutions, ensuring your software is robust and error-free.",
+      des: "Cypress Studio is a powerful QA automation service that streamlines the process of creating and managing automated tests for web applications.",
       target: "sqa-automation",
     },
   ];
