@@ -1,4 +1,6 @@
 import React from "react";
+import sqaAutomation from "../../assets/Services/web/sqaAutomation.svg";
+import underLine from "../../assets/Services/web/secLineShape.svg";
 
 const SqaAutomation = () => {
   const sqaAutomationServices = [
@@ -44,6 +46,54 @@ const SqaAutomation = () => {
     },
   ];
 
+  const sqaAutomationServicesBenefits = [
+    {
+      _id: 1,
+      title: "Reduced Manual Testing",
+      des: "Automating repetitive tasks with Cypress Studio reduces the need for manual testing, saving time and resources.",
+    },
+    {
+      _id: 2,
+      title: "Faster Releases",
+      des: "Speed up your development process with automated testing, enabling faster and more frequent software releases.",
+    },
+    {
+      _id: 3,
+      title: "Improved Test Coverage",
+      des: "Comprehensive test suites ensure that all critical functionality is thoroughly tested.",
+    },
+    {
+      _id: 4,
+      title: "Cost-Effective",
+      des: "Automated testing reduces long-term testing costs and improves the overall quality of your software.",
+    },
+    {
+      _id: 5,
+      title: "Higher Quality Assurance",
+      des: "Catch and fix bugs early in the development cycle, leading to a more stable and reliable product.",
+    },
+    {
+      _id: 6,
+      title: "Proven Expertise",
+      des: "Our QA engineers have a strong track record in QA automation, specifically with Cypress Studio.",
+    },
+    {
+      _id: 7,
+      title: "Tailored Solutions",
+      des: "We customize our services to meet your unique testing requirements.",
+    },
+    {
+      _id: 8,
+      title: "Continuous Support",
+      des: "We offer ongoing support and maintenance to keep your automated tests up to date.",
+    },
+    {
+      _id: 9,
+      title: "Client-Centric Approach",
+      des: "Your success is our priority, and we work closely with you to achieve your testing goals.",
+    },
+  ];
+
   return (
     <section className="bg-[#121316] text-white p-4 md:px-8 pt-5">
       <div className="md:flex">
@@ -65,15 +115,40 @@ const SqaAutomation = () => {
           </p>
         </div>
 
-        <div className="w-full md:w-1/2">
-          {/* <img src={QABanner} alt="" /> */}
-          image coming soon
+        <div className="w-full md:w-1/2 flex justify-center">
+          <img className="w-2/3" src={sqaAutomation} alt="" />
         </div>
       </div>
 
       <div className="bg-[#121316] text-white mt-20 ">
+        <h2 className="text-center text-3xl mb-3">Our Key Features</h2>
+
+        <div className="flex justify-center mb-8">
+          <img src={underLine} alt="" />
+        </div>
+
         <div class="grid md:grid-cols-3 gap-3">
           {sqaAutomationServices.map((service) => (
+            <div
+              key={service?._id}
+              className="border border-gray-800 rounded-md p-5"
+            >
+              <h3 class="text-xl font-semibold mb-4">{service.title}</h3>
+              <p className="text-sm text-gray-400">{service.des}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      <div className="bg-[#121316] text-white mt-20 ">
+        <h2 className="text-center text-3xl mb-3">Benefits</h2>
+
+        <div className="flex justify-center mb-8">
+          <img src={underLine} alt="" />
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-3">
+          {sqaAutomationServicesBenefits.map((service) => (
             <div
               key={service?._id}
               className="border border-gray-800 rounded-md p-5"
