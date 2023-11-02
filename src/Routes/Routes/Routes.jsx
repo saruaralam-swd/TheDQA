@@ -9,6 +9,7 @@ import Blog from "../../Pages/Blog/Blog";
 import WebApplication from "../../Pages/Services/WebApplication";
 import MobileApp from "../../Pages/Services/MobileApp";
 import SQA from "../../Pages/Services/SQA";
+import SqaAutomation from "../../Pages/Services/SqaAutomation";
 
 export const router = createBrowserRouter([
   {
@@ -51,6 +52,10 @@ export const router = createBrowserRouter([
       {
         path: "/service/sqa",
         element: <SQA />,
+      },
+      {
+        path: "/service/sqa-automation",
+        element: <SqaAutomation />,
       },
     ],
   },
