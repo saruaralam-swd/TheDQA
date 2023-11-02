@@ -95,8 +95,8 @@ const SqaAutomation = () => {
   ];
 
   return (
-    <section className="bg-[#121316] text-white p-4 md:px-8 pt-5">
-      <div className="md:flex">
+    <section className="bg-[#121316] text-white ">
+      <div className="md:flex md:px-8 pt-5">
         <div className="w-full md:w-1/2">
           <h6 className="font-xs text-green-500 mb-3 font-semibold">
             QA automation with cypress studio
@@ -120,7 +120,7 @@ const SqaAutomation = () => {
         </div>
       </div>
 
-      <div className="bg-[#121316] text-white mt-20 ">
+      <div className="bg-[#121316] text-white mt-20 p-4 md:px-8 pt-5">
         <h2 className="text-center text-3xl mb-3">Our Key Features</h2>
 
         <div className="flex justify-center mb-8">
@@ -140,7 +140,7 @@ const SqaAutomation = () => {
         </div>
       </div>
 
-      <div className="bg-[#121316] text-white mt-20 ">
+      <div className="bg-[#121316] text-white mt-20 p-4 md:px-8 py-5">
         <h2 className="text-center text-3xl mb-3">Benefits</h2>
 
         <div className="flex justify-center mb-8">
