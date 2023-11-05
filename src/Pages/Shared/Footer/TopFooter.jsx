@@ -7,7 +7,7 @@ const TopFooter = () => {
     <>
       <div className="md:grid grid-cols-3 gap-7 my-10">
         <div className="bg-[#03082D] p-5 overflow-hidden">
-          <div className="flex justify-between items-center">
+          <div>
             <div className="flex items-center gap-4">
               <p className="bg-orange-500 p-2 rounded-md">
                 <PhoneIcon className="w-5 h-5" />

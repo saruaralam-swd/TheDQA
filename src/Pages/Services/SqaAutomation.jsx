@@ -1,6 +1,7 @@
 import React from "react";
 import sqaAutomation from "../../assets/Services/web/sqaAutomation.svg";
 import underLine from "../../assets/Services/web/secLineShape.svg";
+import AllServices from "../../Components/AllServices";
 
 const SqaAutomation = () => {
   const sqaAutomationServices = [
@@ -159,6 +160,8 @@ const SqaAutomation = () => {
           ))}
         </div>
       </div>
+
+      <AllServices />
     </section>
   );
 };

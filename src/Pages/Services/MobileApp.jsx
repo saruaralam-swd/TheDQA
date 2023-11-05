@@ -112,6 +112,7 @@ const MobileApp = () => {
           ))}
         </div>
       </div>
+
       <AllServices />
     </section>
   );
