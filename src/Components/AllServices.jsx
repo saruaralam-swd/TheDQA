@@ -35,15 +35,15 @@ const AllServices = () => {
 
   return (
     <div>
-      <div className="py-5">
+      <div className="px-4 py-10">
         {services.map((service) => (
           <NavLink
             key={service._id}
             to={`/service/${service.target}`}
             className={({ isActive }) =>
               isActive
-                ? "hover:text-[#01EF9A] border inline-block p-2 mx-2 rounded-md bg-[#000000] text-white transition-all duration-700"
-                : "hover:text-[#01EF9A] border inline-block p-2 mx-2 rounded-md bg-[#000000] text-white transition-all duration-700"
+                ? "border inline-block px-3 py-2 mx-2 mb-3 rounded-md bg-[#000000] text-[#F97316]  transition-all duration-500"
+                : "border inline-block px-3 py-2 mx-2 mb-3 rounded-md hover:bg-[#000000] text-white transition-all duration-500"
             }
           >
             {service.text}
