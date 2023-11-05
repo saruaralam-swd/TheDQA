@@ -113,13 +113,13 @@ const WebApplication = () => {
       <div class="mt-20 ">
         {webServices?.map((service) => (
           <div
-            className="bg-[#292b30] my-3 rounded-md border border-gray-800 mb-4 p-4"
+            className="bg-[#1d1e22] my-3 rounded-md border border-gray-800 mb-4 p-4"
             key={service._id}
           >
             <h3 class="text-lg font-semibold">{service.title}</h3>
             <ul class="pl-6">
               {service.des?.map((d, i) => (
-                <li className="text-gray-400" key={i}>
+                <li className="text-gray-300 mb-3" key={i}>
                   {d}
                 </li>
               ))}

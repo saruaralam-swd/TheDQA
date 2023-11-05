@@ -105,7 +105,7 @@ const HomeTestimonial = () => {
   ];
 
   return (
-    <section className="md:min-h-[450px] p-5 md:p-10 py-12 bg-no-repeat bg-contain bg-[#191A1D]">
+    <section className="md:min-h-[450px] p-5 md:p-10 py-12 bg-[#191A1D]">
       <h6 className="font-xs text-[#00FF85] mb-3 font-semibold">Testimonial</h6>
 
       <h2 className="text-3xl font-semibold mb-5 text-white">
@@ -142,7 +142,7 @@ const HomeTestimonial = () => {
           enabled: true,
         }}
         modules={[Navigation, Keyboard, Autoplay]}
-        className="mySwiper"
+        className="mySwiper h-[250px]"
       >
         {clientFeedback.map((client) => (
           <SwiperSlide

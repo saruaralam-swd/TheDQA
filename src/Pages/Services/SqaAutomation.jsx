@@ -96,7 +96,7 @@ const SqaAutomation = () => {
   ];
 
   return (
-    <section className="bg-[#121316] text-white ">
+    <section className="bg-[#121316] text-white px-4 py-5">
       <div className="md:flex md:px-8 pt-5">
         <div className="w-full md:w-1/2">
           <h6 className="font-xs text-green-500 mb-3 font-semibold">
