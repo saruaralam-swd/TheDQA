@@ -79,6 +79,19 @@ const Header = () => {
               Contact Us
             </NavLink>
           </div>
+
+          <div>
+            <NavLink
+              to="career"
+              className={({ isActive }) =>
+                isActive
+                  ? "hover:text-orange-500 text-orange-500 font-normal transition-all duration-300"
+                  : "hover:text-orange-500 font-normal transition-all duration-300"
+              }
+            >
+              Career
+            </NavLink>
+          </div>
         </div>
 
         <div className="flex gap-4 items-center justify-center">

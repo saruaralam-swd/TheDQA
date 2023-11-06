@@ -10,6 +10,7 @@ import WebApplication from "../../Pages/Services/WebApplication";
 import MobileApp from "../../Pages/Services/MobileApp";
 import SQA from "../../Pages/Services/SQA";
 import SqaAutomation from "../../Pages/Services/SqaAutomation";
+import Career from "../../Pages/Career/Career";
 
 export const router = createBrowserRouter([
   {
@@ -40,6 +41,10 @@ export const router = createBrowserRouter([
       {
         path: "/blog",
         element: <Blog />,
+      },
+      {
+        path: "/career",
+        element: <Career />,
       },
       {
         path: "/service/webApp",
