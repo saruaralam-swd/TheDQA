@@ -17,13 +17,11 @@ const TopFooter = () => {
                 <p className="text-xs">Give us a call</p>
               </div>
             </div>
-
-            <PhoneIcon className="w-10 h-10 text-[#181C3C] inline-block" />
           </div>
         </div>
 
         <div className="bg-[#03082D] p-5 overflow-hidden my-5 md:my-0">
-          <div className="flex justify-between items-center gap-20">
+          <div>
             <div className="flex items-center gap-4">
               <p className="bg-orange-500 p-2 rounded-md">
                 <EnvelopeIcon className="w-5 h-5" />
@@ -33,13 +31,11 @@ const TopFooter = () => {
                 <p className="text-xs">Drop a line</p>
               </div>
             </div>
-
-            <EnvelopeIcon className="w-10 h-10 text-[#181C3C] inline-block" />
           </div>
         </div>
 
         <div className="bg-[#03082D] p-5 overflow-hidden">
-          <div className="flex justify-between">
+          <div>
             <div className="flex items-center gap-4">
               <p className="bg-orange-500 p-2 rounded-md">
                 <SiGooglemaps className="w-5 h-5" />
@@ -52,8 +48,6 @@ const TopFooter = () => {
                 <p className="text-xs">Bangladesh</p>
               </div>
             </div>
-
-            <SiGooglemaps className="w-10 h-10 text-[#181C3C] inline-block" />
           </div>
         </div>
       </div>
