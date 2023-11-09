@@ -7,8 +7,14 @@ import {
   FaPinterest,
 } from "react-icons/fa";
 import { IoIosSend } from "react-icons/io";
+import toast from "react-hot-toast";
 
 const MainFooter = () => {
+  // const handleNewsLetterBtn = (e) => {
+  //   e.preventDefault();
+  //   toast.success("Click Done!");
+  // };
+
   return (
     <>
       <div className="grid md:grid-cols-6 gap-5">
@@ -103,12 +109,12 @@ const MainFooter = () => {
         </div>
 
         <div className="col-span-2">
-          <h4 className="text-xl mb-3 md:mb-5 font-semibold">Newsletter</h4>
+          {/* <h4 className="text-xl mb-3 md:mb-5 font-semibold">Newsletter</h4>
           <p className="text-[15px] leading-7 my-3 md:my-5">
             Stay connected for a world of insights, inspiration, and success.
             Subscribe now and be part of our thriving community
           </p>
-          <form className="flex">
+          <form onSubmit={handleNewsLetterBtn} className="flex">
             <input
               type="email"
               className="w-full bg-[#0E1125] text-[#4D5E70] px-4 py-3 border border-[#F97316] focus:outline-none focus:ring-1 focus:ring-orange-500"
@@ -119,7 +125,8 @@ const MainFooter = () => {
             <button className="px-4 py-2 bg-orange-500">
               <IoIosSend className="w-5 h-5" />
             </button>
-          </form>
+          </form> */}
+          {""}
         </div>
       </div>
       <hr className="w-full mt-3" />
